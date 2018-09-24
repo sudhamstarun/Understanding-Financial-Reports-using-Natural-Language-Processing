@@ -2866,13 +2866,26 @@ input, select, textarea {
 				background-color: #efa8b0;
 			}
 
+			.statistics li.style1 span.python img.python{
+				max-width: 75%
+
+			}
+
 			.statistics li.style2 {
 				background-color: #c79cc8;
 			}
 
+
 			.statistics li.style3 {
 				background-color: #a89cc8;
 			}
+
+			.statistics li.style3 span.NLP img.NLP{
+				max-width: 5%
+				margin-bottom: 1000px;
+
+			}
+
 
 			.statistics li.style4 {
 				background-color: #9bb2e1;
