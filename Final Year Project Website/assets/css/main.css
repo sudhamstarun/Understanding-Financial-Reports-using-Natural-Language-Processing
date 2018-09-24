@@ -3060,7 +3060,7 @@ input, select, textarea {
 		}
 
 		#header p {
-			font-size: 1.25em;
+			font-size: 1em;
 			letter-spacing: -0.025em;
 		}
 
@@ -3069,7 +3069,7 @@ input, select, textarea {
 		}
 
 			#header.alt h1 {
-				font-size: 3.25em;
+				font-size: 3em;
 			}
 
 			#header.alt > * {
@@ -3100,7 +3100,7 @@ input, select, textarea {
 				#header.alt .logo img {
 					display: block;
 					margin: 0 auto;
-					max-width: 15%;
+					max-width: 10%;
 				}
 
 		@media screen and (max-width: 1280px) {
