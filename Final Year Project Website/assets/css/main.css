@@ -2862,8 +2862,8 @@ input, select, textarea {
 
 			.statistics li.style1 span.python img.python{
 				max-width: 75%
-
 			}
+
 
 			.statistics li.style2 {
 				background-color: #c79cc8;
@@ -2875,9 +2875,7 @@ input, select, textarea {
 			}
 
 			.statistics li.style3 span.NLP img.NLP{
-				max-width: 5%
-				margin-bottom: 1000px;
-
+				max-width: 70%
 			}
 
 
