@@ -78,6 +78,7 @@ Main components
   position: relative;
   margin: 2em 0;
 }
+
 .cd-timeline-block::after {
   clear: both;
   content: "";
@@ -220,6 +221,10 @@ Main components
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
+}
+
+.cd-date{
+  font-weight: bold;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
