@@ -223,9 +223,6 @@ Main components
   font-size: 0.8125rem;
 }
 
-.cd-date{
-  font-weight: bold;
-}
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
 }
@@ -261,7 +258,7 @@ Main components
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   .cd-timeline-content p {
     font-size: 16px;
