@@ -3290,7 +3290,8 @@ input, select, textarea {
 			}
 
 			.statistics li.style1 span.python img.python{
-				max-width: 75%
+				width: 230px;
+        height: 230px;
 			}
 
 
@@ -3304,7 +3305,8 @@ input, select, textarea {
 			}
 
 			.statistics li.style3 span.NLP img.NLP{
-				max-width: 70%
+        width: 230px;
+        height: 230px;
 			}
 
 
