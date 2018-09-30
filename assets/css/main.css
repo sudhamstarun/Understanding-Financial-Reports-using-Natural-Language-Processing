@@ -3234,7 +3234,7 @@ input, select, textarea {
     }
 
     .features li span.drluo img{
-      border: 3px solid #ddd;
+      
       border-radius: 50%;
       padding: 10px;
       width: auto;
@@ -3253,7 +3253,7 @@ input, select, textarea {
     }
 
     .features li span.drtiffany img{
-      border: 3px solid #ddd;
+      
       border-radius: 50%;
       padding: 10px;
       width: auto;
@@ -3272,13 +3272,33 @@ input, select, textarea {
     }
 
     .features li span.varun img{
-      border: 3px solid #ddd;
       border-radius: 50%;
       padding: 10px;
       transform: rotate(-30deg);
       width: auto;
       height: 100%;
     }
+
+    .features li span.tarun{
+      display: inline-block;
+      position: relative;
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+    .features li span.tarun img{
+      
+      border-radius: 50%;
+      width: 100%;
+      margin-top: -20%;
+      height: auto;
+
+
+    }
+
+
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
 				margin-top: 0;
