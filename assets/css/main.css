@@ -3294,8 +3294,6 @@ input, select, textarea {
       width: 100%;
       margin-top: -20%;
       height: auto;
-
-
     }
 
 
@@ -3369,12 +3367,22 @@ input, select, textarea {
 
 			.statistics li.style1 span.python img.python{
 				width: 230px;
-        height: 230px;
+        		height: 230px;
 			}
 
 
 			.statistics li.style2 {
 				background-color: #c79cc8;
+			}
+
+			.statistics li.style2 span.Project_Plan img
+			{
+				display: block;
+				margin-left: auto;
+    			margin-right: auto;
+				position: relative;
+				width: 150px;
+				height: 150px;
 			}
 
 
@@ -3383,8 +3391,19 @@ input, select, textarea {
 			}
 
 			.statistics li.style3 span.NLP img.NLP{
-        width: 230px;
-        height: 230px;
+		        width: 230px;
+		        height: 230px;
+			}
+
+			.statistics li.style3 span.Interim_Report img{
+				display: block;
+				margin-left: auto;
+    			margin-right: auto;
+    			
+				position: relative;
+				width: 150px;
+				height: 150px;
+
 			}
 
 
@@ -3392,8 +3411,41 @@ input, select, textarea {
 				background-color: #9bb2e1;
 			}
 
+			.statistics li.style4 span.Interim_Presentation img{
+				display: block;
+				margin-left: auto;
+    			margin-right: auto;
+    			
+				position: relative;
+				width: 150px;
+				height: 150px;
+
+			}
+
 			.statistics li.style5 {
 				background-color: #8cc9f0;
+			}
+
+			.statistics li.style5 span.Final_Presentation img{
+				display: block;
+				margin-left: auto;
+    			margin-right: auto;
+				position: relative;
+				width: 150px;
+				height: 150px;
+			}
+
+			.statistics li.style6 {
+				background-color: #a89cc8;
+			}
+
+			.statistics li.style6 span.Final_Report img{
+				display: block;
+				margin-left: 30px;
+    			margin-right: auto;
+				position: relative;
+				width: 150px;
+				height: 150px;
 			}
 
 			.statistics li strong, .statistics li b {
