@@ -1,4 +1,4 @@
-![alt text](/images/logo.svg)
+![alt text](Website/images/logo.svg)
 
 # Understandng Financial Reports using Natural Processing
 
