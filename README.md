@@ -1,4 +1,4 @@
-![alt text](Website/images/news.svg)
+![alt text](Website/images/news.svg = 100x100)
 
 # Understandng Financial Reports using Natural Processing
 
