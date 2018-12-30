@@ -1,4 +1,4 @@
-![Logo](Website/images/news.svg) {:height="100px" width="10px"}
+ <img src="Website/images/news.svg" width="50" height="50">
 
 # Understandng Financial Reports using Natural Processing
 
