@@ -1,4 +1,4 @@
- <img src="Website/images/news.svg" width="50" height="50">
+ <img src="Website/images/news.svg" width="150" height="150">
 
 # Understandng Financial Reports using Natural Processing
 
