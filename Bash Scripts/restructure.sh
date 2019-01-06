@@ -2,13 +2,13 @@
 
 
 #below is working code
-for dir in ~/Downloads/SECReports/SEC-Edgar-Data/*/
+for dir in "~/Downloads/SECReports/SEC-Edgar-Data"/*/
 do
 	for d in $dir/*/
 	do
-		if [ -d ~/Downloads/SECReports/N-CSR/$(basename $d) ]
+		if [ -d "~/Downloads/SECReports/N-CSR/$(basename $d)" ]
 		then
-			(cd "$d" && cd ../../../N-CSR/ && cd ~/Downloads/SECReports/N-CSR/$(basename $d) && mkdir "$(basename $dir)" && cd "$d" && mv N-CSR  ~/Downloads/SECReports/N-CSR/$(basename $d)/$(basename $dir))
+			(cd "$d" && cd "../../../N-CSR/" && cd "~/Downloads/SECReports/N-CSR/$(basename $d)" && mkdir "$(basename $dir)" && cd "$d" && mv N-CSR  ~/Downloads/SECReports/N-CSR/$(basename $d)/$(basename $dir))
 
 	else 
 		(cd "$d" && cd ../../../N-CSR/ && mkdir "$(basename $d)" && cd ~/Downloads/SECReports/N-CSR/$(basename $d) && mkdir "$(basename $dir)" && cd "$d" && mv N-CSR  ~/Downloads/SECReports/N-CSR/$(basename $d)/$(basename $dir))

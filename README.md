@@ -2,6 +2,7 @@
 
 # Understandng Financial Reports using Natural Processing
 
+ 
 
 ## Background
 
@@ -11,10 +12,11 @@ Mutual funds are required to report their portfolio holdings to the SEC each qua
 
 Before SEC has requested more frequent and detailed fund holdings reporting at the end of 2016, mutual funds filed the forms in discrepant formats. One can simply imagine the difficulty of effectively extracting information from the reports for carrying out further analysis. There exist some previous studies that explored how mutual funds have made use of CDS (Adam and Guttler, 2015, Jiang and Zhu, 2016), but only examined a fraction of institutions over a short period of time. In this project, we aim to extract as much CDS-related information as possible from all the filings available to date to enable more thorough downstream analysis. This information appears not only in the form of charts but also in words, thus Natural Language Processing (NLP) is the key.
 
+## Tools Used
 
+1. For tagging the entities in the reports, I developed a annotation tool which can be found here: `https://gitrhub.com/sudhamstarun/Text-Annotation-Tool`
 
-
-
+*more updates to follow as the project progresses*
 
 ## Authors: 
 
