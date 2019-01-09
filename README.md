@@ -1,6 +1,6 @@
 <center> <img src="Website/images/news.svg" width="150" height="150"> </center>
 
-# Understandng Financial Reports using Natural Processing
+# Understandng Financial Reports using Natural Language Processing
 
  
 
