@@ -2,7 +2,7 @@
 
 # Understandng Financial Reports using Natural Language Processing
 
- 
+This project serves as my undergraduate Computer Science thesis in Natural Language Processing.
 
 ## Background
 
