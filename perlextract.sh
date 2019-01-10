@@ -14,7 +14,7 @@ do
 			 (perl ~/Downloads/SECReports/SEC-Edgar-CDS-Record-Extractor/extract.pl $file > ~/Downloads/SECReports/1)
 
 			# if [ grep -R BUY ~/Downloads/SECReports/1 ] && [ grep -R SELL ~/Downloads/SECReports/1 ]  && [ grep -R COUNTERPARTY ~/Downloads/SECReports/1 ]  
-			if [ "grep -i buy ~/Downloads/SECReports/1" ] && [ "grep -i SELL ~/Downloads/SECReports/1" ]  && [ "grep -i COUNTERPARTy ~/Downloads/SECReports/1" ]  
+			if  grep -i "buy" ~/Downloads/SECReports/1 && grep -i "SELL" ~/Downloads/SECReports/1  && grep -i "COUNTERPARTy" ~/Downloads/SECReports/1  
 
 			# ( grep "BUY" ~/Downloads/SECReports/1 )
 			# if [ "$?" == 0 ]
