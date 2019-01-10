@@ -14,12 +14,12 @@ do
 			 (perl ~/Downloads/SECReports/SEC-Edgar-CDS-Record-Extractor/extract.pl $file > ~/Downloads/SECReports/1)
 
 			# if [ grep -R BUY ~/Downloads/SECReports/1 ] && [ grep -R SELL ~/Downloads/SECReports/1 ]  && [ grep -R COUNTERPARTY ~/Downloads/SECReports/1 ]  
-			if  grep -i "buy" ~/Downloads/SECReports/1 && grep -i "SELL" ~/Downloads/SECReports/1  && grep -i "COUNTERPARTy" ~/Downloads/SECReports/1  
+			if  grep -iq "buy" ~/Downloads/SECReports/1 && grep -iq "SELL" ~/Downloads/SECReports/1  && grep -iq "COUNTERPARTy" ~/Downloads/SECReports/1  
 
 			# ( grep "BUY" ~/Downloads/SECReports/1 )
 			# if [ "$?" == 0 ]
 				then
-				if [ "-f ~/Downloads/SECReports/Structured/$(basename $dir)/N-CSR/$(basename $file) "]
+				if [ -f ~/Downloads/SECReports/Structured/$(basename $dir)/N-CSR/$(basename $file) ]
 				then
 					(rm ~/Downloads/SECReports/1)
 				else
@@ -27,7 +27,7 @@ do
 				fi
 
 			else
-				if [ "-f ~/Downloads/SECReports/unstructured/$(basename $dir)/N-CSR/$(basename $file)" ]
+				if [ -f ~/Downloads/SECReports/unstructured/$(basename $dir)/N-CSR/$(basename $file) ]
 				then
 					(rm ~/Downloads/SECReports/1)
 				else
