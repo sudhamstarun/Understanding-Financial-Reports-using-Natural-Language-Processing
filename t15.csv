@@ -1,0 +1,217 @@
+3671271,B,B-Direction of Trade
+3671271,u,I-Direction of Trade
+3671271,y,I-Direction of Trade
+3671271,/,I-Direction of Trade
+3671271,S,I-Direction of Trade
+3671271,e,I-Direction of Trade
+3671271,l,I-Direction of Trade
+3671271,l,I-Direction of Trade
+3671271,<,O
+3671271,/,O
+3671271,B,O
+3671271,>,O
+3671295,M,B-Counterparty
+3671295,e,I-Counterparty
+3671295,r,I-Counterparty
+3671295,r,I-Counterparty
+3671295,i,I-Counterparty
+3671295,l,I-Counterparty
+3671295,l,I-Counterparty
+3671295, ,I-Counterparty
+3671295,L,I-Counterparty
+3671295,y,I-Counterparty
+3671295,n,I-Counterparty
+3671295,c,I-Counterparty
+3671295,h,I-Counterparty
+3671295,<,O
+3671295,S,O
+3671295,U,O
+3671295,P,O
+3671295,>,O
+3671301,S,B-Reference Entity
+3671301,e,I-Reference Entity
+3671301,r,I-Reference Entity
+3671301,i,I-Reference Entity
+3671301,e,I-Reference Entity
+3671301,s,I-Reference Entity
+3671301, ,I-Reference Entity
+3671301,9,I-Reference Entity
+3671301, ,I-Reference Entity
+3671301,I,I-Reference Entity
+3671301,n,I-Reference Entity
+3671301,v,I-Reference Entity
+3671301,e,I-Reference Entity
+3671301,s,I-Reference Entity
+3671301,t,I-Reference Entity
+3671301,m,I-Reference Entity
+3671301,e,I-Reference Entity
+3671301,n,I-Reference Entity
+3671301,t,I-Reference Entity
+3671301,<,O
+3671301,B,O
+3671301,R,O
+3671301,>,O
+3671301,G,B-Reference Entity
+3671301,r,I-Reference Entity
+3671301,a,I-Reference Entity
+3671301,d,I-Reference Entity
+3671301,e,I-Reference Entity
+3671301, ,I-Reference Entity
+3671301,I,I-Reference Entity
+3671301,n,I-Reference Entity
+3671301,d,I-Reference Entity
+3671301,e,I-Reference Entity
+3671301,x,I-Reference Entity
+3671301,<,O
+3671301,H,O
+3671301,R,O
+3671301,>,O
+3671305,S,B-Direction of Trade
+3671305,e,I-Direction of Trade
+3671305,l,I-Direction of Trade
+3671305,l,I-Direction of Trade
+3671305,<,O
+3671305,H,O
+3671305,R,O
+3671305,>,O
+3671309,0,B-Fixed Rate
+3671309,.,I-Fixed Rate
+3671309,6,I-Fixed Rate
+3671309,0,I-Fixed Rate
+3671309,%,I-Fixed Rate
+3671309,<,O
+3671309,H,O
+3671309,R,O
+3671309,>,O
+3671313,1,B-Expiration Date
+3671313,2,I-Expiration Date
+3671313,/,I-Expiration Date
+3671313,2,I-Expiration Date
+3671313,0,I-Expiration Date
+3671313,/,I-Expiration Date
+3671313,2,I-Expiration Date
+3671313,0,I-Expiration Date
+3671313,1,I-Expiration Date
+3671313,2,I-Expiration Date
+3671313,<,O
+3671313,H,O
+3671313,R,O
+3671313,>,O
+3671317,$,B-Notional Amount
+3671317,1,I-Notional Amount
+3671317,0,I-Notional Amount
+3671317,",",I-Notional Amount
+3671317,0,I-Notional Amount
+3671317,0,I-Notional Amount
+3671317,0,I-Notional Amount
+3671317,",",I-Notional Amount
+3671317,0,I-Notional Amount
+3671317,0,I-Notional Amount
+3671317,0,I-Notional Amount
+3671317,<,O
+3671317,H,O
+3671317,R,O
+3671317,>,O
+3671328,L,B-Counterparty
+3671328,e,I-Counterparty
+3671328,h,I-Counterparty
+3671328,m,I-Counterparty
+3671328,a,I-Counterparty
+3671328,n,I-Counterparty
+3671328, ,I-Counterparty
+3671328,B,I-Counterparty
+3671328,r,I-Counterparty
+3671328,o,I-Counterparty
+3671328,t,I-Counterparty
+3671328,h,I-Counterparty
+3671328,e,I-Counterparty
+3671328,r,I-Counterparty
+3671328,s,I-Counterparty
+3671328,<,O
+3671328,S,O
+3671328,U,O
+3671328,P,O
+3671328,>,O
+3671334,S,B-Reference Entity
+3671334,e,I-Reference Entity
+3671334,r,I-Reference Entity
+3671334,i,I-Reference Entity
+3671334,e,I-Reference Entity
+3671334,s,I-Reference Entity
+3671334, ,I-Reference Entity
+3671334,1,I-Reference Entity
+3671334,0,I-Reference Entity
+3671334, ,I-Reference Entity
+3671334,I,I-Reference Entity
+3671334,n,I-Reference Entity
+3671334,v,I-Reference Entity
+3671334,e,I-Reference Entity
+3671334,s,I-Reference Entity
+3671334,t,I-Reference Entity
+3671334,m,I-Reference Entity
+3671334,e,I-Reference Entity
+3671334,n,I-Reference Entity
+3671334,t,I-Reference Entity
+3671334,<,O
+3671334,B,O
+3671334,R,O
+3671334,>,O
+3671334,G,B-Reference Entity
+3671334,r,I-Reference Entity
+3671334,a,I-Reference Entity
+3671334,d,I-Reference Entity
+3671334,e,I-Reference Entity
+3671334, ,I-Reference Entity
+3671334,I,I-Reference Entity
+3671334,n,I-Reference Entity
+3671334,d,I-Reference Entity
+3671334,e,I-Reference Entity
+3671334,x,I-Reference Entity
+3671334,<,O
+3671334,H,O
+3671334,R,O
+3671334,>,O
+3671338,B,B-Direction of Trade
+3671338,u,I-Direction of Trade
+3671338,y,I-Direction of Trade
+3671338,<,O
+3671338,H,O
+3671338,R,O
+3671338,>,O
+3671342,1,B-Fixed Rate
+3671342,.,I-Fixed Rate
+3671342,5,I-Fixed Rate
+3671342,5,I-Fixed Rate
+3671342,%,I-Fixed Rate
+3671342,<,O
+3671342,H,O
+3671342,R,O
+3671342,>,O
+3671346,6,B-Expiration Date
+3671346,/,I-Expiration Date
+3671346,2,I-Expiration Date
+3671346,0,I-Expiration Date
+3671346,/,I-Expiration Date
+3671346,2,I-Expiration Date
+3671346,0,I-Expiration Date
+3671346,1,I-Expiration Date
+3671346,3,I-Expiration Date
+3671346,<,O
+3671346,H,O
+3671346,R,O
+3671346,>,O
+3671350,$,B-Notional Amount
+3671350, ,I-Notional Amount
+3671350,5,I-Notional Amount
+3671350,",",I-Notional Amount
+3671350,0,I-Notional Amount
+3671350,0,I-Notional Amount
+3671350,0,I-Notional Amount
+3671350,",",I-Notional Amount
+3671350,0,I-Notional Amount
+3671350,0,I-Notional Amount
+3671350,0,I-Notional Amount
+3671350,<,O
+3671350,H,O
+3671350,R,O
+3671350,>,O
