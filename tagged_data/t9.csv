@@ -1,0 +1,577 @@
+916124,<,O
+916124,T,O
+916124,D,O
+916124, ,O
+916124,a,O
+916124,l,O
+916124,i,O
+916124,g,O
+916124,n,O
+916124,=,O
+916124,"""",O
+916124,r,O
+916124,i,O
+916124,g,O
+916124,h,O
+916124,t,O
+916124,"""",O
+916124,>,O
+916124,1,B-Notional Amount
+916124,",",I-Notional Amount
+916124,1,I-Notional Amount
+916124,2,I-Notional Amount
+916124,5,I-Notional Amount
+916124,<,O
+916124,/,O
+916124,T,O
+916124,D,O
+916124,>,O
+1077502,<,O
+1077502,T,O
+1077502,D,O
+1077502, ,O
+1077502,v,O
+1077502,a,O
+1077502,l,O
+1077502,i,O
+1077502,g,O
+1077502,n,O
+1077502,=,O
+1077502,"""",O
+1077502,t,O
+1077502,o,O
+1077502,p,O
+1077502,"""",O
+1077502,>,O
+1077502,<,O
+1077502,D,O
+1077502,I,O
+1077502,V,O
+1077502, ,O
+1077502,s,O
+1077502,t,O
+1077502,y,O
+1077502,l,O
+1077502,e,O
+1077502,=,O
+1077502,"""",O
+1077502,m,O
+1077502,a,O
+1077502,r,O
+1077502,g,O
+1077502,i,O
+1077502,n,O
+1077502,-,O
+1077502,l,O
+1077502,e,O
+1077502,f,O
+1077502,t,O
+1077502,:,O
+1077502,0,O
+1077502,p,O
+1077502,x,O
+1077502,;,O
+1077502, ,O
+1077502,t,O
+1077502,e,O
+1077502,x,O
+1077502,t,O
+1077502,-,O
+1077502,i,O
+1077502,n,O
+1077502,d,O
+1077502,e,O
+1077502,n,O
+1077502,t,O
+1077502,:,O
+1077502,-,O
+1077502,0,O
+1077502,p,O
+1077502,x,O
+1077502,"""",O
+1077502,>,O
+1077502,B,B-Direction of Trade
+1077502,u,I-Direction of Trade
+1077502,y,I-Direction of Trade
+1077502, ,O
+1077502,p,O
+1077502,r,O
+1077502,o,O
+1077502,t,O
+1077502,e,O
+1077502,c,O
+1077502,t,O
+1077502,i,O
+1077502,o,O
+1077502,n,O
+1077502, ,O
+1077502,f,O
+1077502,o,O
+1077502,r,O
+1077502, ,O
+1077502,C,B-Reference Entity
+1077502,D,I-Reference Entity
+1077502,X,I-Reference Entity
+1077502, ,I-Reference Entity
+1077502,N,I-Reference Entity
+1077502,A,I-Reference Entity
+1077502, ,I-Reference Entity
+1077502,I,I-Reference Entity
+1077502,G,I-Reference Entity
+1077502, ,I-Reference Entity
+1077502,1,I-Reference Entity
+1077502,0,I-Reference Entity
+1077502, ,I-Reference Entity
+1077502,I,I-Reference Entity
+1077502,n,I-Reference Entity
+1077502,d,I-Reference Entity
+1077502,e,I-Reference Entity
+1077502,x,I-Reference Entity
+1077502, ,O
+1077502,a,O
+1077502,n,O
+1077502,d,O
+1077502, ,O
+1077502,p,O
+1077502,a,O
+1077502,y,O
+1077503,q,O
+1077503,u,O
+1077503,a,O
+1077503,r,O
+1077503,t,O
+1077503,e,O
+1077503,r,O
+1077503,l,O
+1077503,y,O
+1077503, ,O
+1077503,1,B-Fixed Rate
+1077503,.,I-Fixed Rate
+1077503,5,I-Fixed Rate
+1077503,5,I-Fixed Rate
+1077503,%,I-Fixed Rate
+1077503, ,O
+1077503,t,O
+1077503,o,O
+1077503, ,O
+1077503,M,B-Counterparty
+1077503,o,I-Counterparty
+1077503,r,I-Counterparty
+1077503,g,I-Counterparty
+1077503,a,I-Counterparty
+1077503,n,I-Counterparty
+1077503, ,I-Counterparty
+1077503,S,I-Counterparty
+1077503,t,I-Counterparty
+1077503,a,I-Counterparty
+1077503,n,I-Counterparty
+1077503,l,I-Counterparty
+1077503,e,I-Counterparty
+1077503,y,I-Counterparty
+1077503, ,I-Counterparty
+1077503,C,I-Counterparty
+1077503,a,I-Counterparty
+1077503,p,I-Counterparty
+1077503,i,I-Counterparty
+1077503,t,I-Counterparty
+1077503,a,I-Counterparty
+1077503,l,I-Counterparty
+1077509,<,O
+1077509,T,O
+1077509,D,O
+1077509, ,O
+1077509,a,O
+1077509,l,O
+1077509,i,O
+1077509,g,O
+1077509,n,O
+1077509,=,O
+1077509,"""",O
+1077509,r,O
+1077509,i,O
+1077509,g,O
+1077509,h,O
+1077509,t,O
+1077509,"""",O
+1077509, ,O
+1077509,v,O
+1077509,a,O
+1077509,l,O
+1077509,i,O
+1077509,g,O
+1077509,n,O
+1077509,=,O
+1077509,"""",O
+1077509,t,O
+1077509,o,O
+1077509,p,O
+1077509,"""",O
+1077509,>,O
+1077509,2,B-Notional Amount
+1077509,5,I-Notional Amount
+1077509,",",I-Notional Amount
+1077509,5,I-Notional Amount
+1077509,0,I-Notional Amount
+1077509,0,I-Notional Amount
+1077509,<,O
+1077509,/,O
+1077509,T,O
+1077509,D,O
+1077509,>,O
+1201250,<,O
+1201250,T,O
+1201250,D,O
+1201250, ,O
+1201250,a,O
+1201250,l,O
+1201250,i,O
+1201250,g,O
+1201250,n,O
+1201250,=,O
+1201250,"""",O
+1201250,r,O
+1201250,i,O
+1201250,g,O
+1201250,h,O
+1201250,t,O
+1201250,"""",O
+1201250,>,O
+1201250,1,B-Notional Amount
+1201250,",",I-Notional Amount
+1201250,2,I-Notional Amount
+1201250,2,I-Notional Amount
+1201250,5,I-Notional Amount
+1201250,<,O
+1201250,/,O
+1201250,T,O
+1201250,D,O
+1201250,>,O
+1229957,<,O
+1229957,T,O
+1229957,D,O
+1229957,>,O
+1229957,<,O
+1229957,D,O
+1229957,I,O
+1229957,V,O
+1229957, ,O
+1229957,s,O
+1229957,t,O
+1229957,y,O
+1229957,l,O
+1229957,e,O
+1229957,=,O
+1229957,"""",O
+1229957,m,O
+1229957,a,O
+1229957,r,O
+1229957,g,O
+1229957,i,O
+1229957,n,O
+1229957,-,O
+1229957,l,O
+1229957,e,O
+1229957,f,O
+1229957,t,O
+1229957,:,O
+1229957,1,O
+1229957,5,O
+1229957,p,O
+1229957,x,O
+1229957,;,O
+1229957, ,O
+1229957,t,O
+1229957,e,O
+1229957,x,O
+1229957,t,O
+1229957,-,O
+1229957,i,O
+1229957,n,O
+1229957,d,O
+1229957,e,O
+1229957,n,O
+1229957,t,O
+1229957,:,O
+1229957,-,O
+1229957,1,O
+1229957,5,O
+1229957,p,O
+1229957,x,O
+1229957,"""",O
+1229957,>,O
+1229957,B,B-Direction of Trade
+1229957,u,I-Direction of Trade
+1229957,y,I-Direction of Trade
+1229957, ,O
+1229957,p,O
+1229957,r,O
+1229957,o,O
+1229957,t,O
+1229957,e,O
+1229957,c,O
+1229957,t,O
+1229957,i,O
+1229957,o,O
+1229957,n,O
+1229957, ,O
+1229957,f,O
+1229957,o,O
+1229957,r,O
+1229957, ,O
+1229957,C,B-Reference Entity
+1229957,D,I-Reference Entity
+1229957,X,I-Reference Entity
+1229957, ,I-Reference Entity
+1229957,N,I-Reference Entity
+1229957,A,I-Reference Entity
+1229957, ,I-Reference Entity
+1229957,I,I-Reference Entity
+1229957,G,I-Reference Entity
+1229957, ,I-Reference Entity
+1229957,1,I-Reference Entity
+1229957,0,I-Reference Entity
+1229957, ,I-Reference Entity
+1229957,I,I-Reference Entity
+1229957,n,I-Reference Entity
+1229957,d,I-Reference Entity
+1229957,e,I-Reference Entity
+1229957,x,I-Reference Entity
+1229957, ,O
+1229957,a,O
+1229957,n,O
+1229957,d,O
+1229957, ,O
+1229957,p,O
+1229957,a,O
+1229957,y,O
+1229958,q,O
+1229958,u,O
+1229958,a,O
+1229958,r,O
+1229958,t,O
+1229958,e,O
+1229958,r,O
+1229958,l,O
+1229958,y,O
+1229958, ,B-Fixed Rate
+1229958,1,I-Fixed Rate
+1229958,.,I-Fixed Rate
+1229958,5,I-Fixed Rate
+1229958,5,I-Fixed Rate
+1229958,%,I-Fixed Rate
+1229958, ,O
+1229958,t,O
+1229958,o,O
+1229958, ,O
+1229958,D,B-Counterparty
+1229958,e,I-Counterparty
+1229958,u,I-Counterparty
+1229958,t,I-Counterparty
+1229958,s,I-Counterparty
+1229958,c,I-Counterparty
+1229958,h,I-Counterparty
+1229958,e,I-Counterparty
+1229958, ,I-Counterparty
+1229958,B,I-Counterparty
+1229958,a,I-Counterparty
+1229958,n,I-Counterparty
+1229958,k,I-Counterparty
+1229958, ,I-Counterparty
+1229958,A,I-Counterparty
+1229958,G,I-Counterparty
+1229958,.,O
+1229958, ,O
+1229958,E,O
+1229958,x,O
+1229958,p,O
+1229958,i,O
+1229958,r,O
+1229958,e,O
+1229958,s,O
+1229981,<,O
+1229981,T,O
+1229981,D,O
+1229981,>,O
+1229981,<,O
+1229981,D,O
+1229981,I,O
+1229981,V,O
+1229981, ,O
+1229981,s,O
+1229981,t,O
+1229981,y,O
+1229981,l,O
+1229981,e,O
+1229981,=,O
+1229981,"""",O
+1229981,m,O
+1229981,a,O
+1229981,r,O
+1229981,g,O
+1229981,i,O
+1229981,n,O
+1229981,-,O
+1229981,l,O
+1229981,e,O
+1229981,f,O
+1229981,t,O
+1229981,:,O
+1229981,1,O
+1229981,5,O
+1229981,p,O
+1229981,x,O
+1229981,;,O
+1229981, ,O
+1229981,t,O
+1229981,e,O
+1229981,x,O
+1229981,t,O
+1229981,-,O
+1229981,i,O
+1229981,n,O
+1229981,d,O
+1229981,e,O
+1229981,n,O
+1229981,t,O
+1229981,:,O
+1229981,-,O
+1229981,1,O
+1229981,5,O
+1229981,p,O
+1229981,x,O
+1229981,"""",O
+1229981,>,O
+1229981,B,B-Direction of Trade
+1229981,u,I-Direction of Trade
+1229981,y,I-Direction of Trade
+1229981, ,O
+1229981,p,O
+1229981,r,O
+1229981,o,O
+1229981,t,O
+1229981,e,O
+1229981,c,O
+1229981,t,O
+1229981,i,O
+1229981,o,O
+1229981,n,O
+1229981, ,O
+1229981,f,O
+1229981,o,O
+1229981,r,O
+1229981, ,O
+1229981,C,B-Reference Entity
+1229981,D,I-Reference Entity
+1229981,X,I-Reference Entity
+1229981, ,I-Reference Entity
+1229981,N,I-Reference Entity
+1229981,A,I-Reference Entity
+1229981, ,I-Reference Entity
+1229981,I,I-Reference Entity
+1229981,G,I-Reference Entity
+1229981, ,I-Reference Entity
+1229981,1,I-Reference Entity
+1229981,0,I-Reference Entity
+1229981, ,I-Reference Entity
+1229981,I,I-Reference Entity
+1229981,n,I-Reference Entity
+1229981,d,I-Reference Entity
+1229981,e,I-Reference Entity
+1229981,x,I-Reference Entity
+1229981, ,O
+1229981,a,O
+1229981,n,O
+1229981,d,O
+1229981, ,O
+1229981,p,O
+1229981,a,O
+1229981,y,O
+1229982,q,O
+1229982,u,O
+1229982,a,O
+1229982,r,O
+1229982,t,O
+1229982,e,O
+1229982,r,O
+1229982,l,O
+1229982,y,O
+1229982, ,O
+1229982,1,B-Fixed Rate
+1229982,.,I-Fixed Rate
+1229982,5,I-Fixed Rate
+1229982,5,I-Fixed Rate
+1229982,%,I-Fixed Rate
+1229982, ,O
+1229982,t,O
+1229982,o,O
+1229982, ,O
+1229982,M,B-Counterparty
+1229982,o,I-Counterparty
+1229982,r,I-Counterparty
+1229982,g,I-Counterparty
+1229982,a,I-Counterparty
+1229982,n,I-Counterparty
+1229982, ,I-Counterparty
+1229982,S,I-Counterparty
+1229982,t,I-Counterparty
+1229982,a,I-Counterparty
+1229982,n,I-Counterparty
+1229982,l,I-Counterparty
+1229982,e,I-Counterparty
+1229982,y,I-Counterparty
+1229982, ,I-Counterparty
+1229982,C,I-Counterparty
+1229982,a,I-Counterparty
+1229982,p,I-Counterparty
+1229982,i,I-Counterparty
+1229982,t,I-Counterparty
+1229982,a,I-Counterparty
+1229982,l,I-Counterparty
+1229983,S,B-Counterparty
+1229983,e,I-Counterparty
+1229983,r,I-Counterparty
+1229983,v,I-Counterparty
+1229983,i,I-Counterparty
+1229983,c,I-Counterparty
+1229983,e,I-Counterparty
+1229983,s,I-Counterparty
+1229983, ,I-Counterparty
+1229983,I,I-Counterparty
+1229983,n,I-Counterparty
+1229983,c,I-Counterparty
+1229983,.,O
+1229983, ,O
+1229983,E,O
+1229983,x,O
+1229983,p,O
+1229983,i,O
+1229983,r,O
+1229983,e,O
+1229983,s,O
+1229983, ,O
+1229983,J,O
+1229983,u,O
+1229983,n,O
+1229983,e,O
+1229983,&,O
+1229983,n,O
+1229983,b,O
+1229983,s,O
+1229983,p,O
+1229983,;,O
+1229983,2,O
+1229983,0,O
+1229983,1,O
+1229983,3,O
+1229983,.,O
+1229983,<,O
+1229983,/,O
+1229983,D,O
+1229983,I,O
+1229983,V,O
+1229983,>,O
+1229983,<,O
+1229983,/,O
+1229983,T,O
+1229983,D,O
+1229983,>,O
