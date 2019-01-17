@@ -2,6 +2,10 @@ import simplejson
 import sys
 from HTMLParser import HTMLParser
 
+program_name = sys.argv[0]
+arguments = sys.argv[1:]
+count = len(arguments)
+
 class TagStripper(HTMLParser):
     def __init__(self):
         self.reset()
@@ -19,17 +23,20 @@ def strip_tags(html):
 #read input for each file
 #maybe change it to accept files on argument basis
 
-f = open('0001193125-17-056504 2.txt', 'r')
+f = open(arguments[0], 'r')
 text = f.read()
+f.close()
 parsed_output = strip_tags(text)
 
-f = open('0001193125-17-056504 2.txt', 'w')
+f = open(arguments[0], 'w')
 f.write(parsed_output)
+f.close()
 
-#with open('0001193125-17-056504 2.txt') as f:
-   # text = ' '.join(line.strip() for line in f)
+with open(arguments[0]) as f:
+   text = ' '.join(line.strip() for line in f)
 
-# = open('0001193125-17-056504 2.txt', 'w')
-#f.write(text)
+f = open(arguments[0], 'w')
+f.write(text)
+f.close()
 
 
