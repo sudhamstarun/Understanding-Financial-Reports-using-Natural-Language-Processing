@@ -1,46 +1,23 @@
-import simplejson
-import sys
 import nltk
 import sys 
 import string
 
-from HTMLParser import HTMLParser
+#from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize, word_tokenize
+
+def tokenize(text):
+    tokens = nltk.word_tokenize(text)
+    stems = []
+    for item in tokens:
+        stems.append(PorterStemmer().stem(item))
+    return stems
 
 program_name = sys.argv[0]
 arguments = sys.argv[1:]
 count = len(arguments)
 
-class TagStripper(HTMLParser):
-    def __init__(self):
-        self.reset()
-        self.fed = []
-    def handle_data(self, d):
-        self.fed.append(d)
-    def get_data(self):
-        return ''.join(self.fed)
-
-def strip_tags(html):
-    s = TagStripper()
-    s.feed(html)
-    return s.get_data()
-
-#read input for each file
-#maybe change it to accept files on argument basis
-
-f = open(arguments[0], 'r')
-text = f.read()
-f.close()
-parsed_output = strip_tags(text)
-text = ' '.join(parsed_output.split())
-
-#write the parsed output to the same document
-f = open(arguments[0], 'w')
-f.write(text)
-f.close()
-
-#open same file to remove stop words
+#read file
 f = open(arguments[0], 'r')
 text = f.read()
 
@@ -65,7 +42,3 @@ final_text = ' '.join(filtered_sentence)
 f = open('outputs.txt', 'w')
 f.write(final_text)
 f.close()
-
-
-
-
