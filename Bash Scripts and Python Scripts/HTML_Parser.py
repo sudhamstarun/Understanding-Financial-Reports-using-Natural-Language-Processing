@@ -33,7 +33,7 @@ f.write(parsed_output)
 f.close()
 
 with open(arguments[0]) as f:
-   text = ' '.join(line.strip() for line in f)
+   text = ''.join(line.strip() for line in f)
 
 f = open(arguments[0], 'w')
 f.write(text)
