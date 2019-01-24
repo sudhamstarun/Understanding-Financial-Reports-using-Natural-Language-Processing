@@ -81,7 +81,8 @@ import re
 from bs4 import BeautifulSoup
 from bs4.element import NavigableString
 from sys import argv
-from time import time
+from time import time   
+
 
 
 class SECParser(object):
@@ -99,7 +100,7 @@ class SECParser(object):
            extracted
         """
         html1 = re.sub(r' style=".*?"', '', self.text)
-        html2 = re.sub(r'<br>', '\n', html1)
+        html2 = re.sub(r'<br>', '', html1)
         self.soup = BeautifulSoup(html2,"lxml")
 
     def generate_document(self):
@@ -108,32 +109,12 @@ class SECParser(object):
         the body; getting the text content from them should be straightforward
         """
         if not self.soup:
-            self.soup = BeautifulSoup(self.text)
+            self.soup = BeautifulSoup(self.text,"lxml")
         body = self.soup.find('body')
         with open('document.txt', 'wb') as f1:
             for tag in body.children:
-                text = (str(tag)
-                        if isinstance(tag, NavigableString)
-                        else tag.get_text())
-                if not text.endswith('\n'):
-                    text += '\n'
-                try: 
-                    table = self.soup.find('table')
-                    rows = table.findAll('tr')
-
-                    for tr in rows:
-                        cols = tr.findAll('td')
-                        text_data = []
-                        for td in cols:
-                            text = ''.join(td)
-                            utftext = str(text.encode('utf-8'))
-                            text_data.append(utftext) # EDIT
-                        text = date+','.join(text_data)
-                        f.write(text + '\n') 
-                except:
-                    pass
-                
-                f1.write(text.encode())
+                text = (str(tag) if isinstance(tag, NavigableString) else tag.get_text())
+                f1.write(''.join(text.encode()))
 
         with open('document.txt', 'rb') as f1:
             document_txt = f1.read().decode()
@@ -153,8 +134,7 @@ if __name__ == '__main__':
 
     t1 = time()
     parser.preprocess()
-    parser.generate_document()
-    parser.generate_paragraphs()
+    parser.generate_document()  
     print('Finished in', time() - t1, 'secs')
 
 
