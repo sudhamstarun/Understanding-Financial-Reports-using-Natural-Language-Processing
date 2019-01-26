@@ -114,10 +114,14 @@ class SECParser(object):
         with open('document.txt', 'wb') as f1:
             for tag in body.children:
                 text = (str(tag) if isinstance(tag, NavigableString) else tag.get_text())
-                f1.write(''.join(text.encode()))
+                f1.write(text.encode())
 
         with open('document.txt', 'rb') as f1:
             document_txt = f1.read().decode()
+            document_txt = i.rstrip('\n')
+        
+        with open('document.txt', 'wb') as f1:
+            f1.write(i.rstrip('\n'))
 
 
 
