@@ -36,38 +36,31 @@ def get_tables(soup):
     """
     table_list = []
 
-    for tag in soup.find_all(True):
-        if tag.name == "p" or tag.name == "b" and tag.text == "Credit Default":
-            while(True):
-                if tag.name == "table":
-                    print("Found CDS table boi")
-                    # empty dictionary each time represents our table
-                    table_dict = {}
-                    rows = tag.findAll("tr")
-                    # count will be the key for each list of values
-                    count = 0
-                    for row in rows:
-                        value_list = []
-                        entries = row.findAll("td")
-                        for entry in entries:
-                            # fix the encoding issues with utf-8
-                            entry = entry.text.encode("utf-8","ignore")
-                            strip_unicode = re.compile("([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
-                            entry = entry.decode("utf-8")
-                            entry = strip_unicode.sub(" ", entry)
-                            value_list.append(entry)
-                        # we don't want empty data packages
-                        if len(value_list) > 0:
-                            table_dict[count] = value_list
-                            count += 1
+    for tag in soup.find_all("table"):
+        if tag.previous_element == "p" or tag.previous_element == "b" and tag.previous_element.text == "Credit Default":
+            print("Found CDS table boi")
+            # empty dictionary each time represents our table
+            table_dict = {}
+            rows = tag.findAll("tr")
+            # count will be the key for each list of values
+            count = 0
+            for row in rows:
+                value_list = []
+                entries = row.findAll("td")
+                for entry in entries:
+                    # fix the encoding issues with utf-8
+                    entry = entry.text.encode("utf-8","ignore")
+                    strip_unicode = re.compile("([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
+                    entry = entry.decode("utf-8")
+                    entry = strip_unicode.sub(" ", entry)
+                    value_list.append(entry)
+                # we don't want empty data packages
+                if len(value_list) > 0:
+                    table_dict[count] = value_list
+                    count += 1
 
-                    table_obj = Table(table_dict)
-                    table_list.append(table_obj)
-                    break
-
-                else:
-                    tag = tag.next_element
-                    print("New Tag Value:", tag)
+            table_obj = Table(table_dict)
+            table_list.append(table_obj)
 
     return table_list
 
