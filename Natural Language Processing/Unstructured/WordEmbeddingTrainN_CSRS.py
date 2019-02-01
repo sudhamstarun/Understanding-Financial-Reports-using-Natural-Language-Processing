@@ -6,7 +6,6 @@ try:
 except:
 	pass
 
-#%%
 import pandas 
 import numpy
 import glob
@@ -75,7 +74,6 @@ downsampling = 1e-3 # downsampling for very frequent words
 seed = 1 # seed for random number generator to make results reproducible
 
 # Now defining our Word2Vec model with the above declared hyperparameters
-
 word2vec_ = Word2Vec(
     sg = 1, seed = seed,
     workers = num_workers,
@@ -86,7 +84,6 @@ word2vec_ = Word2Vec(
 )
 
 # It's important that we train our vocabulary first before training the model
-
 word2vec_.build_vocab(data)
 
 # Now training the Word2Vec model with the vocabulary generated above
@@ -94,10 +91,7 @@ word2vec_.train(data, total_examples = word2vec_.corpus_count, epochs = word2vec
 
 print(word2vec_.most_similar('credit'))
 
-#%% [markdown]
-# ### Iterate through the entire vocabulary
-
-#%%
+### Iterate through the entire vocabulary
 vocab = list(word2vec_.wv.vocab.keys())
 vocab[:100]
 
