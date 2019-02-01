@@ -67,5 +67,3 @@ f.write(final_text)
 f.close()
 
 
-
-
