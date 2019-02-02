@@ -16,7 +16,7 @@ Before SEC has requested more frequent and detailed fund holdings reporting at t
 
 ## Tools Used
 
-1. For tagging the entities in the reports, I developed a annotation tool which can be found here: `https://gitrhub.com/sudhamstarun/Text-Annotation-Tool`
+1. For tagging the entities in the reports, I developed a annotation tool which can be found here: `https://github.com/sudhamstarun/Text-Annotation-Tool`
 
 *more updates to follow as the project progresses*
 
