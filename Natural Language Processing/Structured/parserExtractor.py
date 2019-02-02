@@ -27,7 +27,7 @@ def get_tables(soup, length):
         # Find the first <p> tag with the search text
         table_tag = soup.find("p", {"class": iterator})
         # Find the first <table> tag that follows it
-        table = table_tag.findNext('table')
+        table = table_tag.findNext("table")
         # empty dictionary each time represents our table
         table_dict = {}
         rows = table.findAll("tr")
@@ -73,8 +73,11 @@ def append_classID(filepath):
     print("Number of p tags founds are: ", lengthFoundText)
     for i in range(lengthFoundText):
         if searchtext in all_tags[i].text:
-            all_tags[i]['class'] = i
             counter += 1
+
+    for i in range(0, counter):
+        if searchtext in all_tags[i].text:
+            all_tags[i]['class'] = i
 
     print("Number of CDS p tags founds are: ", counter)
     return soup, counter
