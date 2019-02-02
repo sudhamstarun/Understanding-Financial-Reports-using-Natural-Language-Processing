@@ -1,18 +1,17 @@
-# %% Change working directory from the workspace root to the ipynb file location. Turn this addition off with the DataScience.changeDirOnImportExport setting
+# Change working directory from the workspace root to the ipynb file location. Turn this addition off with the DataScience.changeDirOnImportExport setting
 import os
 try:
     os.chdir(os.path.join(os.getcwd(), 'Natural Language Processing/Structured'))
     print(os.getcwd())
 except:
     pass
-# %% [markdown]
+
 # ## Introduction
-# %% [markdown]
+
 # The aim is to extract all the possible tables from the structured and unstructured SEC filings with minimal use of RegEx and try to aggregate all the tables which may or may not contain CDS information. Once that is comepletely, filtering method should be in place which would filter out the tables which do not have Credit Default Swap information
-# %% [markdown]
+
 # ## Declaring libraries required to run our implementation
 
-# %%
 from bs4 import BeautifulSoup as bs
 from bs4 import NavigableString
 from collections import namedtuple
@@ -24,10 +23,7 @@ import urllib
 import re
 import sys
 
-# %% [markdown]
 # ## Defining the get table functions and supporting functions
-
-# %%
 
 
 def get_tables(soup):
@@ -37,34 +33,37 @@ def get_tables(soup):
     pointers to the respective Table object(s).
     """
     table_list = []
-    searchtext = re.compile(r'Credit\s+Default', re.IGNORECASE)
-    # Find the first <p> tag with the search text
-    foundtext = soup.find('p', 'b', 'div', text=searchtext)
-    # Find the first <table> tag that follows it
-    table = foundtext.findNext('table')
-    # empty dictionary each time represents our table
-    table_dict = {}
-    rows = table.findAll("tr")
-    # count will be the key for each list of values
-    count = 0
-    for row in rows:
-        value_list = []
-        entries = row.findAll("td")
-        for entry in entries:
-            # fix the encoding issues with utf-8
-            entry = entry.text.encode("utf-8", "ignore")
-            strip_unicode = re.compile(
-                "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
-            entry = entry.decode("utf-8")
-            entry = strip_unicode.sub(" ", entry)
-            value_list.append(entry)
-        # we don't want empty data packages
-        if len(value_list) > 0:
-            table_dict[count] = value_list
-            count += 1
+    for tag in soup.find_all(True):
+        if tag.name == "p" or tag.name == "b" and tag.text == "Credit Default":
+            while(True):
+                if tag.name == "table":
+                    # empty dictionary each time represents our table
+                    table_dict = {}
+                    rows = tag.findAll("tr")
+                    # count will be the key for each list of values
+                    count = 0
+                    for row in rows:
+                        value_list = []
+                        entries = row.findAll("td")
+                        for entry in entries:
+                            # fix the encoding issues with utf-8
+                            entry = entry.text.encode("utf-8", "ignore")
+                            strip_unicode = re.compile(
+                                "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
+                            entry = entry.decode("utf-8")
+                            entry = strip_unicode.sub(" ", entry)
+                            value_list.append(entry)
+                        # we don't want empty data packages
+                        if len(value_list) > 0:
+                            table_dict[count] = value_list
+                            count += 1
 
-    table_obj = Table(table_dict)
-    table_list.append(table_obj)
+                    table_obj = Table(table_dict)
+                    table_list.append(table_obj)
+                    break
+
+                else:
+                    tag = tag.next_element
 
     return table_list
 
@@ -80,8 +79,9 @@ def save_tables(tables):
         table.save_table(name)
         counter += 1
 
-
 # ## Defining table function to get the table data and store it
+
+
 Metadata = namedtuple("Metadata", "num_cols num_entries")
 
 
@@ -130,7 +130,8 @@ class Table:
         """
         pprint.pprint(self.table_data, width=1)
 
-# Driver Function
+
+# ## Driver Function
 
 
 # enter the file we want
@@ -145,7 +146,6 @@ print("Soup is ready.........")
 
 tables = get_tables(soup)
 print("got the tables.......")
-
 # save the tables
 save_tables(tables)
 print("tables saved.......")
