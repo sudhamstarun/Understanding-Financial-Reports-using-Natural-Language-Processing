@@ -23,11 +23,10 @@ def get_tables(soup, length):
     pointers to the respective Table object(s).
     """
     table_list = []
-    # Find the first <p> tag with the search text
-    # Find the first <table> tag that follows it
-    # tables = foundtext.findNextAll('table')
-    for iterator in range(length):
+    for iterator in range(0, length):
+        # Find the first <p> tag with the search text
         table_tag = soup.find("p", {"class": iterator})
+        # Find the first <table> tag that follows it
         table = table_tag.findNext('table')
         # empty dictionary each time represents our table
         table_dict = {}
