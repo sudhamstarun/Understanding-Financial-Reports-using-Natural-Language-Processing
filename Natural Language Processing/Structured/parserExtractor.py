@@ -106,7 +106,7 @@ def append_classID(filepath):
     div_counter = 0
     # Find the first <p> tag with the search text
     all_p_tags = soup.find_all("p")
-    all_div_tags = soup.find_all("font")
+    all_div_tags = soup.find_all("div")
     plengthFoundText = len(all_p_tags)
     divlengthFoundText = len(all_div_tags)
     for i in range(plengthFoundText):
