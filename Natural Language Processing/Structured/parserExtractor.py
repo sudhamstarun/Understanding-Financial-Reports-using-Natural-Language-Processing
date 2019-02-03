@@ -130,7 +130,7 @@ def append_classID(filepath):
 
     for j in range(divlengthFoundText):
         for l in range(len(searchtext)):
-            if searchtext[k] in all_div_tags[j].text:
+            if searchtext[l] in all_div_tags[j].text:
                 div_counter += 1
                 all_div_tags[j]['class'] = div_counter
                 break
