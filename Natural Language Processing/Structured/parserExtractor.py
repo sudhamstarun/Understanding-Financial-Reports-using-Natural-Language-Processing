@@ -24,8 +24,8 @@ def get_tables(soup, p_counter, div_counter):
     pointers to the respective Table object(s).
     """
     table_list = []
-    print("The value of p_counter is: " p_counter)
-    print("The value of div_counter is: " div_counter)
+    print("The value of p_counter is: ",  p_counter)
+    print("The value of div_counter is: ", div_counter)
     for iterator in range(1, p_counter):
         # Find the first <p> tag with the search text
         table_tag = soup.find("p", {"class": str(iterator)})
