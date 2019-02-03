@@ -17,14 +17,14 @@ count = len(arguments)
 # ## Defining the get table functions and supporting functions
 
 
-def get_tables(soup, counter):
+def get_tables(soup, p_counter, div_counter):
     """
     Extracts each table on the page and places it in a dictionary.
     Converts each dictionary to a Table object. Returns a list of
     pointers to the respective Table object(s).
     """
     table_list = []
-    for iterator in range(1, counter):
+    for iterator in range(1, p_counter):
         # Find the first <p> tag with the search text
         table_tag = soup.find("p", {"class": str(iterator)})
         # Find the first <table> tag that follows it
@@ -52,7 +52,40 @@ def get_tables(soup, counter):
 
         table_obj = Table(table_dict)
         table_list.append(table_obj)
-        print("Number of tables done: ", iterator)
+
+        print("Number of p_tables done: ", iterator)
+
+    for iterator in range(1, div_counter):
+        # Find the first <p> tag with the search text
+        table_tag = soup.find("div", {"class": str(iterator)})
+        # Find the first <table> tag that follows it
+        table = table_tag.findNext("table")
+        # empty dictionary each time represents our table
+        table_dict = {}
+        rows = table.findAll("tr")
+        # count will be the key for each list of values
+        count = 0
+        for row in rows:
+            value_list = []
+            entries = row.findAll("td")
+            for entry in entries:
+                # fix the encoding issues with utf-8
+                entry = entry.text.encode("utf-8", "ignore")
+                strip_unicode = re.compile(
+                    "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
+                entry = entry.decode("utf-8")
+                entry = strip_unicode.sub(" ", entry)
+                value_list.append(entry)
+            # we don't want empty data packages
+            if len(value_list) > 0:
+                table_dict[count] = value_list
+                count += 1
+
+        table_obj = Table(table_dict)
+        table_list.append(table_obj)
+
+        print("Number of div_tables done: ", iterator)
+
     return table_list
 
 
@@ -67,16 +100,23 @@ def append_classID(filepath):
     searchtext = "Credit Default"
 
     all_tags = []
-    counter = 0
+    p_counter = 0
+    div_counter = 0
     # Find the first <p> tag with the search text
-    all_tags = soup.find_all("p")
-    lengthFoundText = len(all_tags)
-    for i in range(lengthFoundText):
+    all_p_tags = soup.find_all("p")
+    all_div_tags = soup.find_all("div")
+    plengthFoundText = len(all_p_tags)
+    divlengthFoundText = len(all_div_tags)
+    for i in range(plengthFoundText):
         if searchtext in all_tags[i].text:
-            counter += 1
-            all_tags[i]['class'] = counter
+            p_counter += 1
+            all_p_tags[i]['class'] = P_counter
+    for j in range(divlengthFoundText):
+        if searchtext in all_div_tags[i].text:
+            div_counter += 1
+            all_div_tags[i]['class'] = div_counter
 
-    return soup, counter
+    return soup, p_counter, div_counter
 
 
 def save_tables(tables):
@@ -153,11 +193,11 @@ program_name = arguments[0]
 
 # Souping
 print("making the soup.........")
-soup, length = append_classID(program_name)
+soup, p_counter, div_counter = append_classID(program_name)
 print("Soup is ready.........")
 
 # get the tables
-tables = get_tables(soup, length)
+tables = get_tables(soup, p_counter, div_counter)
 print("got the tables.......")
 
 # save the tables
