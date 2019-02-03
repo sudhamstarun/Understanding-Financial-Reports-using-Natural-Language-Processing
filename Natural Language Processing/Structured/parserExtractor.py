@@ -100,7 +100,10 @@ def append_classID(filepath):
 
     # Making soup
     soup = bs(data, "lxml")
-    searchtext = "Credit Default"
+
+    # Adding multiple reporting styles used in reoprts to mention CDS information
+    searchtext = ["Credit Default", "CDS Contract",
+                  "Default Swap", "Default Contract", "Default Protection", "Credit Derivative"]
 
     p_counter = 0
     div_counter = 0
@@ -116,14 +119,18 @@ def append_classID(filepath):
     divlengthFoundText = len(all_div_tags)
 
     for i in range(plengthFoundText):
-        if searchtext in all_p_tags[i].text:
-            p_counter += 1
-            all_p_tags[i]['class'] = p_counter
+        for k in range(len(searchtext)):
+            if searchtext[k] in all_p_tags[i].text:
+                p_counter += 1
+                all_p_tags[i]['class'] = p_counter
+                break
 
     for j in range(divlengthFoundText):
-        if searchtext in all_div_tags[j].text:
-            div_counter += 1
-            all_div_tags[j]['class'] = div_counter
+        for l in range(len(searchtext)):
+            if searchtext in all_div_tags[j].text:
+                div_counter += 1
+                all_div_tags[j]['class'] = div_counter
+                break
 
     return soup, p_counter, div_counter
 
