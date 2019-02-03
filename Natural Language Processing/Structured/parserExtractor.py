@@ -24,6 +24,7 @@ def get_tables(soup, p_counter, div_counter):
     pointers to the respective Table object(s).
     """
     table_list = []
+
     for iterator in range(1, p_counter):
         # Find the first <p> tag with the search text
         table_tag = soup.find("p", {"class": str(iterator)})
@@ -57,7 +58,7 @@ def get_tables(soup, p_counter, div_counter):
 
     for iterator in range(1, div_counter):
         # Find the first <p> tag with the search text
-        table_tag = soup.find("div", {"class": str(iterator)})
+        table_tag = soup.find("font", {"class": str(iterator)})
         # Find the first <table> tag that follows it
         table = table_tag.findNext("table")
         # empty dictionary each time represents our table
@@ -104,7 +105,7 @@ def append_classID(filepath):
     div_counter = 0
     # Find the first <p> tag with the search text
     all_p_tags = soup.find_all("p")
-    all_div_tags = soup.find_all("div")
+    all_div_tags = soup.find_all("font")
     plengthFoundText = len(all_p_tags)
     divlengthFoundText = len(all_div_tags)
     for i in range(plengthFoundText):
