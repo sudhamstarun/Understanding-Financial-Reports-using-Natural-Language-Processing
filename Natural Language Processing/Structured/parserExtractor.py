@@ -76,7 +76,6 @@ def append_classID(filepath):
             counter += 1
             all_tags[i]['class'] = counter
 
-    print("Number of CDS p tags founds are: ", counter)
     return soup, counter
 
 
