@@ -75,13 +75,6 @@ def append_classID(filepath):
             counter += 1
             all_tags[i]['class'] = counter
 
-    """
-    for j in range(counter):
-        for i in range(lengthFoundText):
-            if searchtext in all_tags[i].text:
-                all_tags[i]['class'] = j
-    """
-
     print("Number of CDS p tags founds are: ", counter)
     return soup, counter
 
