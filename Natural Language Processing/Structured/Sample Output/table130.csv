@@ -1,0 +1,10 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,Variation Margin, 
+Index/Tranches, ,Fixed Receive Rate, , ,MaturityDate, , ,NotionalAmount (3), ,  ,MarketValue (4), , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+" CDX.IG-26 5-Year
+Index", , ,1.000,% , , ,06/20/2021, , ,$,"25,200", ,  ,$,429, , ,$,206, , ,$,4, , ,$,0, 
+" CDX.IG-27 5-Year
+Index", , ,1.000, , , ,12/20/2021, , , ,"26,300", ,  , ,408, , , ,119, , , ,8, , , ,0, 
+, ,,,, ,,,, ,,,,  ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,,,, ,,,, ,,,,  ,$,  837, , ,$,  325, , ,$,  12, , ,$,  0, 
+, ,,,, ,,,, ,,,,  ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

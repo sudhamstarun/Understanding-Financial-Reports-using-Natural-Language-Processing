@@ -1,0 +1,8 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value (6)", 
+Counterparty, ,Index/Tranches, ,Fixed(Pay) Rate, , ,MaturityDate, , , NotionalAmount (5), , ,PremiumsPaid, , ,Unrealized(Depreciation), , ,Asset, , ,Liability, 
+ BOA, , iTraxx Europe Subordinated 26 5-Year Index, , ,(1.000,)% , , ,12/20/2021, , , ,EUR, , , ,400, , ,$,25, , ,$,(1,) , ,$,24, , ,$,0, 
+ MYC, , iTraxx Europe Subordinated 26 5-Year Index, , ,(1.000,) , , ,12/20/2021, , ,,,, , ,"1,200", , , ,74, , , ,(2,) , , ,72, , , ,0, 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+,, ,$,  99, , ,$,  (3,) , ,$,  96, , ,$,  0, 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

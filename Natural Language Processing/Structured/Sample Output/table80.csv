@@ -1,0 +1,10 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value 
+(5)", 
+Counterparty, ,Index/Tranches, ,FixedReceive Rate, , ,MaturityDate, , ,NotionalAmount (4), , ,PremiumsPaid/(Received), , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+BOA, , ABX.HE.AAA.6-2 Index, , ,0.110,% , , ,05/25/2046, , ,$,"  6,405", , ,$,"  (1,293",) , ,$,  445, , ,$,0, , ,$,(848,) 
+, , CDX.HY-23 5-Year Index 25-35%, , ,5.000, , , ,12/20/2019, , , ,200, , , ,16, , , ,11, , , ,27, , , ,0, 
+CBK, , CDX.HY-23 5-Year Index 25-35%, , ,5.000, , , ,12/20/2019, , , ,300, , , ,25, , , ,15, , , ,40, , , ,0, 
+, ,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+,, ,,,, ,,,, ,$,"(1,252",) , ,$,471, , ,$,  67, , ,$,  (848,) 
+, ,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

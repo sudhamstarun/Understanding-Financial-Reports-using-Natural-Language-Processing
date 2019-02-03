@@ -1,0 +1,6 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,FixedReceive Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (3)", , ,NotionalAmount (4), , ,Premiums(Received), , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+ BPS, , Barclays Bank PLC, , ,3.000,% , , ,06/20/2018, , , ,0.658,% , ,EUR,"   3,000", , ,$,  (3,) , ,$,  117, , ,$,  114, , ,$,  0, 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

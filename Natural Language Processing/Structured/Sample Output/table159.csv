@@ -1,0 +1,10 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value 
+(5)", 
+Counterparty, ,Index/Tranches, ,FixedReceive Rate, , ,MaturityDate, ,  ,NotionalAmount (4), , ,Premiums(Received), , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+ DUB, , CMBX.NA.AAA.8 Index, , ,0.500,% , , ,10/17/2057, ,  ,$,"  6,300", , ,$,(440,) , ,$,368, , ,$,0, , ,$,(72,) 
+ GST, , CMBX.NA.AAA.8 Index, , ,0.500, , , ,10/17/2057, ,  , ,"2,400", , , ,(161,) , , ,134, , , ,0, , , ,(27,) 
+ MEI, , CMBX.NA.AAA.8 Index, , ,0.500, , , ,10/17/2057, ,  , ,"3,700", , , ,(250,) , , ,208, , , ,0, , , ,(42,) 
+, ,, ,,,, ,,,,  ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+,, ,,,,  ,,,, ,$,  (851,) , ,$,  710, , ,$,  0, , ,$,  (141,) 
+, ,, ,,,, ,,,,  ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

@@ -1,0 +1,12 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,Variation Margin, 
+Index/Tranches, ,Fixed Receive Rate, , ,MaturityDate, , ,NotionalAmount (3), ,  ,MarketValue (4), , ,UnrealizedAppreciation/(Depreciation), , ,Asset, , ,Liability, 
+" CDX.HY-26 5-Year
+Index", , ,5.000,% , , ,06/20/2021, , ,$,"2,100", ,  ,$,149, , ,$,90, , ,$,2, , ,$,0, 
+" CDX.HY-27 5-Year
+Index", , ,5.000, , , ,12/20/2021, , , ,"1,400", ,  , ,90, , , ,11, , , ,2, , , ,0, 
+" CDX.IG-27 5-Year
+Index", , ,1.000, , , ,12/20/2021, , , ,"  28,600", ,  , ,(444,) , , ,  (182,) , , ,0, , , ,(8,) 
+, ,,,, ,,,, ,,,,  ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,,,, ,,,, ,,,,  ,$,  (205,) , ,$,(81,) , ,$,  4, , ,$,  (8,) 
+, ,,,, ,,,, ,,,,  ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

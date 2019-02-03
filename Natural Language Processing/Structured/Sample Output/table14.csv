@@ -1,0 +1,9 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,Variation Margin, 
+Reference Entity, ,FixedReceive Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (2)", , ,NotionalAmount (3), , ,MarketValue, , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+ Airbus Group Finance BV, , ,1.000,% , , ,12/20/2017, , , ,0.250,% , ,EUR,"  2,000", , ,$,17, , ,$,7, , ,$,0, , ,$,0, 
+ Volkswagen International Finance NV, , ,1.000, , , ,12/20/2017, , , ,0.289, , , ,"1,200", , , ,9, , , ,1, , , ,0, , , ,0, 
+, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,,,, ,,,, ,,,, ,,,, ,$,  26, , ,$,  8, , ,$,  0, , ,$,  0, 
+, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

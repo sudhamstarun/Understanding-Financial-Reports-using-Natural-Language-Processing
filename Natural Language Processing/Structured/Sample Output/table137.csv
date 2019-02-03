@@ -1,0 +1,15 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , , , , , , , , , , , , , , , , , , , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,Fixed(Pay) Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (3)", , , NotionalAmount (4), , ,PremiumsPaid/(Received), , ,UnrealizedAppreciation/(Depreciation), , ,Asset, , ,Liability, 
+ BOA, , Standard Chartered Bank, , ,(1.000,)% , , ,06/20/2017, , , ,0.373,% , ,EUR,100, , ,$,3, , ,$,(3,) , ,$,0, , ,$,0, 
+, , Sweden Government International Bond, , ,(0.250,) , , ,09/20/2021, , , ,0.206, , ,$,  900, , , ,11, , , ,(12,) , , ,0, , , ,(1,) 
+ BPS, , Sweden Government International Bond, , ,(0.250,) , , ,09/20/2021, , , ,0.206, , , ,300, , , ,3, , , ,(4,) , , ,0, , , ,(1,) 
+ CBK, , Rabobank Group, , ,(1.000,) , , ,03/20/2017, , , ,0.205, , ,EUR,300, , , ,4, , , ,(5,) , , ,0, , , ,(1,) 
+, , Standard Chartered Bank, , ,(1.000,) , , ,06/20/2017, , , ,0.373, , , ,200, , , ,1, , , ,(2,) , , ,0, , , ,(1,) 
+ FBF, , Noble Corp., , ,(1.000,) , , ,03/20/2017, , , ,1.499, , ,$,200, , , ,0, , , ,0, , , ,0, , , ,0, 
+ GST, , Standard Chartered Bank, , ,(1.000,) , , ,06/20/2017, , , ,0.373, , ,EUR,200, , , ,1, , , ,(2,) , , ,0, , , ,(1,) 
+, ," Stanley Black & Decker, Inc.", , ,(1.000,) , , ,09/20/2017, , , ,0.101, , ,$,200, , , ,(3,) , , ,2, , , ,0, , , ,(1,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,, ,,,, ,,,, ,,,, ,,,, ,$,  20, , ,$,  (26,) , ,$,  0, , ,$,  (6,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

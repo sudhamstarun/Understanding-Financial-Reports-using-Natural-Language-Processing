@@ -1,0 +1,9 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,Variation Margin, 
+Reference Entity, ,FixedReceive Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (2)", , ,NotionalAmount (3), , ,MarketValue, , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+" MetLife, Inc.", , ,1.000,% , , ,03/20/2019, , , ,0.382,% , ,$,500, , ,$,7, , ,$,1, , ,$,0, , ,$,0, 
+" MetLife, Inc.", , ,1.000, , , ,06/20/2019, , , ,0.423, , , ,"5,500", , , ,80, , , ,9, , , ,0, , , ,(2,) 
+, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,,,, ,,,, ,,,, ,,,, ,$,  87, , ,$,  10, , ,$,  0, , ,$,  (2,) 
+, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

@@ -1,0 +1,13 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,FixedReceive Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (2)", , ,NotionalAmount (3), , ,PremiumsPaid/(Received), , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+BOA, , Brazil Government International Bond, , ,1.000,% , , ,12/20/2021, , , ,2.754,% , ,$,200, , ,$,  (18,) , ,$,2, , ,$,0, , ,$,(16,) 
+BRC, , Brazil Government International Bond, , ,1.000, , , ,12/20/2021, , , ,2.754, , , ,400, , , ,(34,) , , ,2, , , ,0, , , ,(32,) 
+DUB, , Telstra Corp. Ltd., , ,1.000, , , ,06/20/2021, , , ,0.446, , , ,"  2,300", , , ,32, , , ,24, , , ,56, , , ,0, 
+JPM, , Brazil Government International Bond, , ,1.000, , , ,12/20/2021, , , ,2.754, , , ,500, , , ,(42,) , , ,3, , , ,0, , , ,(39,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+,, ,,,, ,,,, ,,,, ,$,(62,) , ,$,31, , ,$,56, , ,$,(87,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+ Total Swap Agreements, , ,$,(62,) , ,$,  31, , ,$,  56, , ,$,  (87,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

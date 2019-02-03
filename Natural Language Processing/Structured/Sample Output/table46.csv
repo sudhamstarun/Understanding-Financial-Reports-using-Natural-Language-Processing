@@ -1,0 +1,22 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,FixedReceive Rate, , ," Maturity
+Date", , ," Implied CreditSpread at
+December 31, 2016 (3)", , ," Notional
+Amount (4)", , ," Premiums
+Paid/(Received)", , ," Unrealized
+Appreciation", , ,Asset, , ,Liability, 
+ BOA, , Deutsche Bank AG, , ,1.000,% , , ,12/20/2017, , , ,0.934,% , ,EUR,300, , ,$,(4,) , ,$,4, , ,$,0, , ,$,0, 
+ BPS, , Barclays Bank PLC, , ,1.000, , , ,06/20/2017, , , ,0.290, , , ,"1,900", , , ,0, , , ,8, , , ,8, , , ,0, 
+, , Deutsche Bank AG, , ,1.000, , , ,12/20/2017, , , ,0.934, , , ,"  1,900", , , ,(29,) , , ,31, , , ,2, , , ,0, 
+ CBK, , Brazil Government International Bond, , ,1.000, , , ,06/20/2021, , , ,2.514, , ,$,200, , , ,(16,) , , ,3, , , ,0, , , ,(13,) 
+, , Deutsche Bank AG, , ,1.000, , , ,12/20/2017, , , ,0.934, , ,EUR,400, , , ,(5,) , , ,5, , , ,0, , , ,0, 
+, , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , ,$,300, , , ,(7,) , , ,2, , , ,0, , , ,(5,) 
+ DUB, , Brazil Government International Bond, , ,1.000, , , ,06/20/2021, , , ,2.514, , , ,500, , , ,(39,) , , ,8, , , ,0, , , ,(31,) 
+ FBF, , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , , ,"1,200", , , ,(28,) , , ,8, , , ,0, , , ,(20,) 
+ HUS, , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , , ,"1,600", , , ,(36,) , , ,9, , , ,0, , , ,(27,) 
+ JPM, , Deutsche Bank AG, , ,1.000, , , ,12/20/2017, , , ,0.934, , ,EUR,500, , , ,(7,) , , ,8, , , ,1, , , ,0, 
+, , Russia Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.622, , ,$,700, , , ,(39,) , , ,21, , , ,0, , , ,(18,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+,, ,,,, ,,,, ,,,, ,$,  (210,) , ,$,  107, , ,$,  11, , ,$,  (114,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

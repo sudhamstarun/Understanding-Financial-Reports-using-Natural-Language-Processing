@@ -1,0 +1,18 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ ,  , , , , , , , , , , , , , , , , , , , , ,"Swap Agreements, at Value", 
+Counterparty,  ,Reference Entity, ,Fixed Receive Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (3)", , ,NotionalAmount (4), , ,PremiumsPaid/(Received), , ,UnrealizedAppreciation/(Depreciation), , ,Asset, , ,Liability, 
+BOA,  , Colombia Government International Bond, , ,1.000,% , , ,12/20/2021, , , ,1.632,% , ,$,100, , ,$,(5,) , ,$,2, , ,$,0, , ,$,(3,) 
+,  , Spain Government International Bond, , ,1.000, , , ,09/20/2019, , , ,0.469, , , ,"4,900", , , ,51, , , ,21, , , ,72, , , ,0, 
+BPS,  , Slovenia Government International Bond, , ,1.000, , , ,06/20/2019, , , ,0.452, , , ,"  6,500", , , ,(68,) , , ,158, , , ,90, , , ,0, 
+BRC,  , Brazil Government International Bond, , ,1.000, , , ,12/20/2021, , , ,2.754, , , ,100, , , ,(9,) , , ,1, , , ,0, , , ,(8,) 
+,  , Colombia Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.480, , , ,200, , , ,(6,) , , ,2, , , ,0, , , ,(4,) 
+,  , Mexico Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.545, , , ,200, , , ,(7,) , , ,2, , , ,0, , , ,(5,) 
+DUB,  , Brazil Government International Bond, , ,1.000, , , ,12/20/2021, , , ,2.754, , , ,200, , , ,(19,) , , ,3, , , ,0, , , ,(16,) 
+GST,  , Argentine Republic Government International Bond, , ,5.000, , , ,06/20/2017, , , ,0.836, , , ,200, , , ,3, , , ,1, , , ,4, , , ,0, 
+,  , Colombia Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.480, , , ,200, , , ,(6,) , , ,2, , , ,0, , , ,(4,) 
+HUS,  , Colombia Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.632, , , ,100, , , ,(5,) , , ,2, , , ,0, , , ,(3,) 
+MYC,  , Italy Government International Bond, , ,1.000, , , ,12/20/2019, , , ,1.118, , , ,"1,500", , , ,(3,) , , ,(1,) , , ,0, , , ,(4,) 
+,  ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,,,, ,,,, ,,,, ,,,, ,$,  (74,) , ,$,  193, , ,$,  166, , ,$,  (47,) 
+,  ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

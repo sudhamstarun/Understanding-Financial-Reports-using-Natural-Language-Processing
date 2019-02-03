@@ -1,0 +1,13 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+Counterparty,  ,Description,  ,Buy/SellProtection, ,  ,ExerciseRate, , ,ExpirationDate, ,  ,NotionalAmount, , ,Premiums(Received), , ,MarketValue, 
+BOA,  , Put - OTC iTraxx Europe 26 5-Year Index,  , ,Sell, ,  , ,1.000,% , , ,02/15/2017, ,  ,EUR," 1,400", , ,$,(2,) , ,$,0, 
+,  , Put - OTC iTraxx Europe 26 5-Year Index,  , ,Sell, ,  , ,1.000, , , ,03/15/2017, ,  , ,"4,900", , , ,(11,) , , ,(4,) 
+BRC,  , Put - OTC iTraxx Europe 26 5-Year Index,  , ,Sell, ,  , ,1.050, , , ,02/15/2017, ,  , ,"5,500", , , ,(11,) , , ,(1,) 
+,  , Put - OTC iTraxx Europe 26 5-Year Index,  , ,Sell, ,  , ,1.100, , , ,02/15/2017, ,  , ,"3,300", , , ,(6,) , , ,(1,) 
+CBK,  , Put - OTC iTraxx Europe 26 5-Year Index,  , ,Sell, ,  , ,1.000, , , ,02/15/2017, ,  , ,"1,100", , , ,(2,) , , ,0, 
+GST,  ," Call - OTC CDX.IG-27
+5-Year Index",  , ,Buy, ,  , ,0.700, , , ,03/15/2017, ,  ,$,"  14,000", , , ,(38,) , , ,(32,) 
+,  , Put - OTC iTraxx Europe 26 5-Year Index,  , ,Sell, ,  , ,1.050, , , ,02/15/2017, ,  ,EUR," 1,700", , , ,(3,) , , ,0, 
+,  ,,  ,,,,  ,,,, ,,,,  ,,,, ,  ,  , , ,  ,  , 
+,  ,,  ,,,,  ,,,, ,,,,  ,,,, ,$,  (73,) , ,$,  (38,) 
+,  ,,  ,,,,  ,,,, ,,,,  ,,,, ,  ,  , , ,  ,  , 

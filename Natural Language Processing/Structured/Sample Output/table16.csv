@@ -1,0 +1,8 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,Variation Margin, 
+Index/Tranches, ,FixedReceive Rate, , ,MaturityDate, , ,NotionalAmount (2), ,  ,MarketValue (3), , ,UnrealizedAppreciation/(Depreciation), , ,Asset, , ,Liability, 
+ CDX.IG-27 5-Year Index, , ,1.000,% , , ,12/20/2021, , ,$,"15,100", ,  ,$,(235,) , ,$,  (12,) , ,$,  0, , ,$,  (4,) 
+ iTraxx Europe Main 25 5-Year Index, , ,1.000, , , ,06/20/2021, , ,EUR,"  14,600", ,  , ,(241,) , , ,41, , , ,1, , , ,0, 
+, ,,,, ,,,, ,,,,  ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,,,, ,,,, ,,,,  ,$,  (476,) , ,$,29, , ,$,1, , ,$,(4,) 
+, ,,,, ,,,, ,,,,  ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

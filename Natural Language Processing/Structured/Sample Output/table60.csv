@@ -1,0 +1,9 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value 
+(4)", 
+Counterparty, ,Index/Tranches, ,FixedReceive Rate, , ,MaturityDate, , ,NotionalAmount (3), , ,PremiumsPaid/(Received), , ,UnrealizedAppreciation/(Depreciation), , ,Asset, , ,Liability, 
+JPM, , CDX.IG-9 10-Year Index 30-100%, , ,0.553,% , , ,12/20/2017, , ,$,  96, , ,$,0, , ,$,1, , ,$,1, , ,$,0, 
+MYC, , CMBX.NA.AAA.3 Index, , ,0.080, , , ,12/13/2049, , , ,43, , , ,0, , , ,0, , , ,0, , , ,0, 
+, ,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+,, ,,,, ,,,, ,$,  0, , ,$,  1, , ,$,  1, , ,$,  0, 
+, ,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

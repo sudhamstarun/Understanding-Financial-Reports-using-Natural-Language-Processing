@@ -1,0 +1,20 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,FixedReceive Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (2)", , ,NotionalAmount (3), , ,PremiumsPaid/(Received), , ,UnrealizedAppreciation/(Depreciation), , ,Asset, , ,Liability, 
+BOA, , Italy Government International Bond, , ,1.000,% , , ,06/20/2021, , , ,1.366,% , ,$,800, , ,$,(7,) , ,$,(5,) , ,$,0, , ,$,(12,) 
+BPS, , BHP Billiton Finance USA Ltd., , ,1.000, , , ,06/20/2021, , , ,0.995, , , ,400, , , ,(14,) , , ,14, , , ,0, , , ,0, 
+, , Deutsche Bank AG, , ,1.000, , , ,12/20/2017, , , ,0.934, , ,EUR,600, , , ,(10,) , , ,11, , , ,1, , , ,0, 
+, , Italy Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.366, , ,$,600, , , ,(4,) , , ,(5,) , , ,0, , , ,(9,) 
+BRC, ," Goldman Sachs Group, Inc.", , ,1.000, , , ,06/20/2021, , , ,0.819, , , ,"1,100", , , ,(9,) , , ,18, , , ,9, , , ,0, 
+, , Italy Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.366, , , ,700, , , ,(5,) , , ,(5,) , , ,0, , , ,(10,) 
+, , Saudi Arabia Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.130, , , ,400, , , ,(9,) , , ,7, , , ,0, , , ,(2,) 
+CBK, , Credit Suisse Group Finance, , ,1.000, , , ,06/20/2017, , , ,0.504, , ,EUR,600, , , ,1, , , ,0, , , ,1, , , ,0, 
+, , Italy Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.431, , ,$,"  1,200", , , ,(35,) , , ,12, , , ,0, , , ,(23,) 
+DUB, , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , , ,"3,000", , , ,(71,) , , ,20, , , ,0, , , ,(51,) 
+FBF, , Mexico Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.545, , , ,200, , , ,(5,) , , ,0, , , ,0, , , ,(5,) 
+HUS, , Mexico Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.545, , , ,"1,500", , , ,(41,) , , ,3, , , ,0, , , ,(38,) 
+JPM, , Saudi Arabia Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.130, , , ,"1,100", , , ,(21,) , , ,15, , , ,0, , , ,(6,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+,, ,,,, ,,,, ,,,, ,$,  (230,) , ,$,  85, , ,$,  11, , ,$,  (156,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

@@ -1,0 +1,25 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,Fixed Receive Rate, , ,MaturityDate, , ,"Implied CreditSpread atDecember 31, 
+2016 (4)", , , NotionalAmount (5), , ,PremiumsPaid/(Received), , ,UnrealizedAppreciation/(Depreciation), , ,Asset, , ,Liability, 
+ BOA, , Deutsche Bank AG, , ,1.000,% , , ,12/20/2017, , , ,0.934,% , , ,EUR, , , ,200, , ,$,(3,) , ,$,3, , ,$,0, , ,$,0, 
+ BPS, , Barclays Bank PLC, , ,1.000, , , ,06/20/2017, , , ,0.290, , ,,,, , ,"1,300", , , ,0, , , ,5, , , ,5, , , ,0, 
+, , Deutsche Bank AG, , ,1.000, , , ,12/20/2017, , , ,0.934, , ,,,, , ,"1,200", , , ,(18,) , , ,19, , , ,1, , , ,0, 
+ BRC, , Colombia Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.480, , , ,$, , , ,200, , , ,(6,) , , ,2, , , ,0, , , ,(4,) 
+ CBK, , Brazil Government International Bond, , ,1.000, , , ,06/20/2021, , , ,2.514, , ,,,, , ,200, , , ,(16,) , , ,3, , , ,0, , , ,(13,) 
+, ," California State General Obligation Bonds, Series 2003", , ,1.000, , , ,12/20/2017, , , ,0.576, , ,,,, , ,"20,500", , , ,(77,) , , ,169, , , ,92, , , ,0, 
+, , Deutsche Bank AG, , ,1.000, , , ,12/20/2017, , , ,0.934, , , ,EUR, , , ,300, , , ,(3,) , , ,3, , , ,0, , , ,0, 
+, , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , , ,$, , , ,200, , , ,(4,) , , ,1, , , ,0, , , ,(3,) 
+ DUB, , Brazil Government International Bond, , ,1.000, , , ,06/20/2021, , , ,2.514, , ,,,, , ,300, , , ,(24,) , , ,5, , , ,0, , , ,(19,) 
+, , Brazil Government International Bond, , ,1.000, , , ,12/20/2021, , , ,2.754, , ,,,, , ,"11,000", , , ,(906,) , , ,36, , , ,0, , , ,(870,) 
+, , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , ,,,, , ,"1,600", , , ,(37,) , , ,10, , , ,0, , , ,(27,) 
+ HUS, , Brazil Government International Bond, , ,1.000, , , ,06/20/2021, , , ,2.514, , ,,,, , ,"2,100", , , ,(136,) , , ,5, , , ,0, , , ,(131,) 
+, , Colombia Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.480, , ,,,, , ,200, , , ,(6,) , , ,2, , , ,0, , , ,(4,) 
+, , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , ,,,, , ,300, , , ,(7,) , , ,2, , , ,0, , , ,(5,) 
+ JPM, , Brazil Government International Bond, , ,1.000, , , ,06/20/2021, , , ,2.514, , ,,,, , ,100, , , ,(7,) , , ,1, , , ,0, , , ,(6,) 
+, , Deutsche Bank AG, , ,1.000, , , ,12/20/2017, , , ,0.934, , , ,EUR, , , ,300, , , ,(4,) , , ,5, , , ,1, , , ,0, 
+, , Deutsche Bank AG, , ,1.000, , , ,12/20/2021, , , ,3.416, , ,,,, , ,400, , , ,(79,) , , ,32, , , ,0, , , ,(47,) 
+ NGF, , Russia Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.622, , , ,$, , , ,500, , , ,(28,) , , ,15, , , ,0, , , ,(13,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,, ,,,, ,,,, ,,,, ,,,, ,,,, ,$,"  (1,361",) , ,$,  318, , ,$,  99, , ,$,"  (1,142",) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

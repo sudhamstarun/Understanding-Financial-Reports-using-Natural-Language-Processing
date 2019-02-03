@@ -1,0 +1,11 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , , , , , , , , , , , , , , , , , , , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,Fixed (Pay) Rate, , ,MaturityDate, , ,"Implied CreditSpread atDecember 31, 
+2016 (2)", , ,NotionalAmount (3), , ,PremiumsPaid/(Received), , ,UnrealizedAppreciation/(Depreciation), , ,Asset, , ,Liability, 
+BOA, , Computer Sciences Corp., , ,(1.160,)% , , ,03/20/2018, , , ,0.117,% , ,$,"  4,600", , ,$,(70,) , ,$,10, , ,$,0, , ,$,(60,) 
+, ," Starwood Hotels & Resorts Worldwide, Inc.", , ,(1.490,) , , ,06/20/2018, , , ,0.119, , , ,"5,000", , , ,566, , , ,(670,) , , ,0, , , ,(104,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,, ,,,, ,,,, ,,,, ,,,, ,$,  496, , ,$,  (660,) , ,$,  0, , ,$,  (164,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+ Total Swap Agreements, , ,,,, ,,,, ,,,, ,$,496, , ,$,(660,) , ,$,0, , ,$,(164,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

@@ -1,0 +1,22 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,FixedReceive Rate, , ,MaturityDate, , ,"Implied CreditSpread atDecember 31, 
+2016 (4)", , ,NotionalAmount (5), , ," PremiumsPaid/
+(Received)", , ,UnrealizedAppreciation/(Depreciation), , ,Asset, , ,Liability, 
+BOA, , Colombia Government International Bond, , ,1.000,% , , ,12/20/2021, , , ,1.632,% , ,$,800, , ,$,(30,) , ,$,7, , ,$,0, , ,$,(23,) 
+BPS, , Banco Espirito Santo S.A., , ,5.000, , , ,12/20/2021, , , ,19.064, , ,EUR, 300, , , ,(86,) , , ,(17,) , , ,0, , , ,(103,) 
+, , Colombia Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.632, , ,$,"2,200", , , ,(79,) , , ,15, , , ,0, , , ,(64,) 
+, , Petrobras Global Finance BV, , ,1.000, , , ,09/20/2019, , , ,3.309, , , ,"7,800", , , ,(232,) , , ,(231,) , , ,0, , , ,(463,) 
+, , Royal Bank of Scotland PLC, , ,1.000, , , ,12/20/2017, , , ,0.670, , ,EUR," 1,000", , , ,2, , , ,2, , , ,4, , , ,0, 
+BRC, , Colombia Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.632, , ,$,"4,000", , , ,(138,) , , ,22, , , ,0, , , ,(116,) 
+, , Indonesia Government International Bond, , ,1.000, , , ,09/20/2019, , , ,0.888, , , ,"7,200", , , ,(52,) , , ,76, , , ,24, , , ,0, 
+, , South Africa Government International Bond, , ,1.000, , , ,12/20/2019, , , ,1.264, , , ,"  16,700", , , ,(406,) , , ,285, , , ,0, , , ,(121,) 
+GST, , Barclays Bank PLC, , ,1.000, , , ,06/20/2021, , , ,0.767, , ,EUR," 1,100", , , ,0, , , ,13, , , ,13, , , ,0, 
+, , Indonesia Government International Bond, , ,1.000, , , ,12/20/2019, , , ,0.935, , ,$,"9,600", , , ,(117,) , , ,139, , , ,22, , , ,0, 
+HUS, , Colombia Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.632, , , ,900, , , ,(31,) , , ,5, , , ,0, , , ,(26,) 
+JPM, , Banco Espirito Santo S.A., , ,5.000, , , ,12/20/2021, , , ,19.064, , ,EUR, 800, , , ,(209,) , , ,(66,) , , ,0, , , ,(275,) 
+MYC, , Barclays Bank PLC, , ,1.000, , , ,06/20/2021, , , ,0.767, , , ,200, , , ,0, , , ,2, , , ,2, , , ,0, 
+, , Brazil Government International Bond, , ,1.000, , , ,03/20/2019, , , ,1.299, , ,$,"1,000", , , ,(16,) , , ,10, , , ,0, , , ,(6,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,,,, ,,,, ,,,, ,,,, ,$,"  (1,394",) , ,$,  262, , ,$,  65, , ,$,"  (1,197",) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

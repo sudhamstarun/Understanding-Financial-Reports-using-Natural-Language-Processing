@@ -1,0 +1,55 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,FixedReceive Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (3)", , ,NotionalAmount (4), , ,PremiumsPaid/(Received), , ,UnrealizedAppreciation/(Depreciation), , ,Asset, , ,Liability, 
+BOA, , Argentine Republic Government International Bond, , ,5.000,% , , ,12/20/2021, , , ,4.204,% , ,$,400, , ,$,10, , ,$,5, , ,$,15, , ,$,0, 
+, , Colombia Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.632, , , ,"1,500", , , ,(62,) , , ,19, , , ,0, , , ,(43,) 
+, ," New York State General Obligation Bonds, Series 2005", , ,1.850, , , ,03/20/2021, , , ,0.330, , , ,"1,900", , , ,0, , , ,118, , , ,118, , , ,0, 
+, , Russia Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.795, , , ,300, , , ,(12,) , , ,1, , , ,0, , , ,(11,) 
+, , Venezuela Government International Bond, , ,5.000, , , ,09/20/2020, , , ,43.415, , , ,700, , , ,(475,) , , ,92, , , ,0, , , ,(383,) 
+BPS, , Banco Espirito Santo S.A., , ,5.000, , , ,12/20/2021, , , ,19.064, , ,EUR,  200, , , ,(56,) , , ,(13,) , , ,0, , , ,(69,) 
+, , Deutsche Bank AG, , ,1.000, , , ,12/20/2017, , , ,0.934, , , ,200, , , ,(4,) , , ,4, , , ,0, , , ,0, 
+, , Venezuela Government International Bond, , ,5.000, , , ,09/20/2020, , , ,43.415, , ,$,400, , , ,(269,) , , ,50, , , ,0, , , ,(219,) 
+BRC, , Brazil Government International Bond, , ,1.000, , , ,06/20/2017, , , ,0.648, , , ,"2,000", , , ,(49,) , , ,53, , , ,4, , , ,0, 
+, , Mexico Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.545, , , ,"7,000", , , ,(193,) , , ,18, , , ,0, , , ,(175,) 
+, , Philippines Government International Bond, , ,1.000, , , ,06/20/2021, , , ,0.996, , , ,"3,000", , , ,(83,) , , ,85, , , ,2, , , ,0, 
+, , Russia Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.795, , , ,"3,500", , , ,(170,) , , ,42, , , ,0, , , ,(128,) 
+, , Seagate Technology HDD Holdings, , ,5.000, , , ,03/20/2018, , , ,0.125, , , ,400, , , ,27, , , ,(2,) , , ,25, , , ,0, 
+, , Seagate Technology HDD Holdings, , ,5.000, , , ,06/20/2018, , , ,0.133, , , ,300, , , ,18, , , ,4, , , ,22, , , ,0, 
+, , Springleaf Finance Corp., , ,5.000, , , ,12/20/2021, , , ,4.353, , , ,300, , , ,(13,) , , ,22, , , ,9, , , ,0, 
+CBK, ," California State General Obligation Bonds, Series 2003", , ,3.050, , , ,12/20/2020, , , ,0.576, , , ,"6,000", , , ,0, , , ,568, , , ,568, , , ,0, 
+, ," California State General Obligation Bonds, Series 2003", , ,2.650, , , ,03/20/2021, , , ,0.614, , , ,"1,800", , , ,210, , , ,(62,) , , ,148, , , ,0, 
+, , Deutsche Bank AG, , ,1.000, , , ,12/20/2017, , , ,0.934, , ,EUR,  100, , , ,(2,) , , ,2, , , ,0, , , ,0, 
+, , Turkey Government International Bond, , ,1.000, , , ,03/20/2020, , , ,2.011, , ,$,"4,100", , , ,(190,) , , ,64, , , ,0, , , ,(126,) 
+, , Venezuela Government International Bond, , ,5.000, , , ,09/20/2020, , , ,43.415, , , ,300, , , ,(201,) , , ,37, , , ,0, , , ,(164,) 
+DUB, , Brazil Government International Bond, , ,1.000, , , ,06/20/2017, , , ,0.648, , , ,"1,350", , , ,(47,) , , ,50, , , ,3, , , ,0, 
+, , Colombia Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.632, , , ,"2,700", , , ,(100,) , , ,22, , , ,0, , , ,(78,) 
+, , Indonesia Government International Bond, , ,1.000, , , ,12/20/2018, , , ,0.673, , , ,"2,900", , , ,(128,) , , ,148, , , ,20, , , ,0, 
+FBF, , South Africa Government International Bond, , ,1.000, , , ,12/20/2020, , , ,1.708, , , ,"1,325", , , ,(51,) , , ,16, , , ,0, , , ,(35,) 
+, ," Univision Communications, Inc.", , ,5.000, , , ,09/20/2019, , , ,1.953, , , ,"5,800", , , ,(638,) , , ,"1,113", , , ,475, , , ,0, 
+GST, , Brazil Government International Bond, , ,1.000, , , ,06/20/2017, , , ,0.648, , , ,"2,650", , , ,(65,) , , ,70, , , ,5, , , ,0, 
+, , Mexico Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.545, , , ,800, , , ,(28,) , , ,8, , , ,0, , , ,(20,) 
+, , Petrobras Global Finance BV, , ,1.000, , , ,12/20/2021, , , ,4.729, , , ,"1,200", , , ,(219,) , , ,27, , , ,0, , , ,(192,) 
+, , South Africa Government International Bond, , ,1.000, , , ,03/20/2020, , , ,1.402, , , ,"2,000", , , ,(123,) , , ,99, , , ,0, , , ,(24,) 
+, , Springleaf Finance Corp., , ,5.000, , , ,12/20/2021, , , ,4.353, , , ,100, , , ,(3,) , , ,6, , , ,3, , , ,0, 
+, ," Univision Communications, Inc.", , ,5.000, , , ,09/20/2019, , , ,1.953, , , ,650, , , ,(72,) , , ,125, , , ,53, , , ,0, 
+, , Venezuela Government International Bond, , ,5.000, , , ,09/20/2020, , , ,43.415, , , ,700, , , ,(464,) , , ,81, , , ,0, , , ,(383,) 
+HUS, , Colombia Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.632, , , ,"4,600", , , ,(190,) , , ,57, , , ,0, , , ,(133,) 
+, , Mexico Government International Bond, , ,1.000, , , ,03/20/2017, , , ,0.362, , , ,"2,900", , , ,10, , , ,(5,) , , ,5, , , ,0, 
+, , Mexico Government International Bond, , ,1.000, , , ,12/20/2021, , , ,1.545, , , ,100, , , ,(4,) , , ,2, , , ,0, , , ,(2,) 
+, , South Africa Government International Bond, , ,1.000, , , ,09/20/2017, , , ,0.305, , , ,570, , , ,(9,) , , ,12, , , ,3, , , ,0, 
+, , Venezuela Government International Bond, , ,5.000, , , ,06/20/2020, , , ,44.051, , , ,"1,700", , , ,"(1,049",) , , ,130, , , ,0, , , ,(919,) 
+JPM, , Banco Espirito Santo S.A., , ,5.000, , , ,12/20/2021, , , ,19.064, , ,EUR,  200, , , ,(54,) , , ,(15,) , , ,0, , , ,(69,) 
+, , Deutsche Bank AG, , ,1.000, , , ,12/20/2017, , , ,0.934, , , ,200, , , ,(3,) , , ,3, , , ,0, , , ,0, 
+, , Philippines Government International Bond, , ,1.000, , , ,06/20/2021, , , ,0.996, , ,$,"  1,000", , , ,(24,) , , ,25, , , ,1, , , ,0, 
+, , South Africa Government International Bond, , ,1.000, , , ,12/20/2021, , , ,2.140, , , ,300, , , ,(21,) , , ,5, , , ,0, , , ,(16,) 
+, , Springleaf Finance Corp., , ,5.000, , , ,12/20/2021, , , ,4.353, , , ,100, , , ,(4,) , , ,7, , , ,3, , , ,0, 
+, , Venezuela Government International Bond, , ,5.000, , , ,09/20/2020, , , ,43.415, , , ,"1,100", , , ,(734,) , , ,133, , , ,0, , , ,(601,) 
+MYC, , Brazil Government International Bond, , ,1.000, , , ,06/20/2017, , , ,0.648, , , ,"3,400", , , ,(111,) , , ,118, , , ,7, , , ,0, 
+, ," New York State General Obligation Bonds, Series 2005", , ,1.950, , , ,12/20/2020, , , ,0.307, , , ,"6,000", , , ,0, , , ,382, , , ,382, , , ,0, 
+, , South Africa Government International Bond, , ,1.000, , , ,12/20/2020, , , ,1.708, , , ,"2,760", , , ,(90,) , , ,17, , , ,0, , , ,(73,) 
+NGF, , Saudi Arabia Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.009, , , ,"1,000", , , ,(26,) , , ,26, , , ,0, , , ,0, 
+UAG, , Brazil Government International Bond, , ,1.000, , , ,06/20/2017, , , ,0.648, , , ,"6,775", , , ,(129,) , , ,143, , , ,14, , , ,0, 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+,, ,,,, ,,,, ,,,, ,$,"  (5,890",) , ,$,"  3,912", , ,$,"  1,885", , ,$,"  (3,863",) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

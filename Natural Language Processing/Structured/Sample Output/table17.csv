@@ -1,0 +1,8 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,Variation Margin, 
+Index/Tranches, ,FixedReceive Rate, , ,MaturityDate, , ,NotionalAmount (3), ,  ,MarketValue (4), , ,Unrealized(Depreciation), , ,Asset, , ,Liability, 
+ CDX.IG-26 10-Year Index, , ,1.000,% , , ,06/20/2026, , ,$,"231,900", ,  ,$,"1,722", , ,$,"(1,871",) , ,$,0, , ,$,(134,) 
+ iTraxx Europe Main 26 5-Year Index, , ,1.000, , , ,12/20/2021, , ,EUR,"   805,800", ,  , ,"(11,917",) , , ,"(3,196",) , , ,0, , , ,(56,) 
+, ,,,, ,,,, ,,,,  ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,,,, ,,,, ,,,,  ,$,"  (10,195",) , ,$,"  (5,067",) , ,$,  0, , ,$,  (190,) 
+, ,,,, ,,,, ,,,,  ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

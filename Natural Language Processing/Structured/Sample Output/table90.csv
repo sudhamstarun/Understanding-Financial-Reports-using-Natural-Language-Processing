@@ -1,0 +1,15 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value", 
+,,,,,,,,,
+Counterparty,  ,Reference Entity, ,Fixed Receive Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (3)", , ,NotionalAmount (4), , ,Premiums(Received), , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+BOA,  , Italy Government International Bond, , ,1.000,% , , ,03/20/2019, , , ,0.981,% , ,$,"1,000", , ,$,(8,) , ,$,9, , ,$,1, , ,$,0, 
+CBK,  , Brazil Government International Bond, , ,1.000, , , ,06/20/2021, , , ,2.514, , , ,200, , , ,(16,) , , ,4, , , ,0, , , ,(12,) 
+,  , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , , ,200, , , ,(4,) , , ,1, , , ,0, , , ,(3,) 
+DUB,  , Brazil Government International Bond, , ,1.000, , , ,06/20/2021, , , ,2.514, , , ,300, , , ,(24,) , , ,5, , , ,0, , , ,(19,) 
+,  , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , , ,"2,300", , , ,(53,) , , ,14, , , ,0, , , ,(39,) 
+HUS,  , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , , ,700, , , ,(16,) , , ,4, , , ,0, , , ,(12,) 
+NGF,  , Russia Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.622, , , ,500, , , ,(28,) , , ,15, , , ,0, , , ,(13,) 
+,  ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,,,, ,,,, ,,,, ,,,, ,$,  (149,) , ,$,  52, , ,$,  1, , ,$,  (98,) 
+,  ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

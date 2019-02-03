@@ -1,0 +1,19 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,FixedReceive Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (3)", , ,NotionalAmount (4), , ,Premiums(Received), , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+BOA, , Mexico Government International Bond, , ,1.000,% , , ,06/20/2021, , , ,1.407,% , ,$,"  15,480", , ,$,(353,) , ,$,92, , ,$,0, , ,$,(261,) 
+BRC, , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , , ,"55,700", , , ,"(1,274",) , , ,336, , , ,0, , , ,(938,) 
+CBK, , Brazil Government International Bond, , ,1.000, , , ,06/20/2021, , , ,2.514, , , ,"6,700", , , ,(530,) , , ,112, , , ,0, , , ,(418,) 
+, , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , , ,"9,700", , , ,(216,) , , ,53, , , ,0, , , ,(163,) 
+DUB, , Brazil Government International Bond, , ,1.000, , , ,06/20/2021, , , ,2.514, , , ,"1,800", , , ,(142,) , , ,30, , , ,0, , , ,(112,) 
+, , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , , ,"7,000", , , ,(154,) , , ,36, , , ,0, , , ,(118,) 
+FBF, , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , , ,"3,500", , , ,(78,) , , ,19, , , ,0, , , ,(59,) 
+GST, , Brazil Government International Bond, , ,1.000, , , ,06/20/2021, , , ,2.514, , , ,"15,800", , , ,"(1,020",) , , ,35, , , ,0, , , ,(985,) 
+HUS, , Mexico Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.407, , , ,"3,600", , , ,(82,) , , ,21, , , ,0, , , ,(61,) 
+JPM, , Brazil Government International Bond, , ,1.000, , , ,06/20/2021, , , ,2.514, , , ,"7,100", , , ,(461,) , , ,18, , , ,0, , , ,(443,) 
+, , Russia Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.622, , , ,"8,300", , , ,(465,) , , ,250, , , ,0, , , ,(215,) 
+NGF, , Russia Government International Bond, , ,1.000, , , ,06/20/2021, , , ,1.622, , , ,200, , , ,(11,) , , ,6, , , ,0, , , ,(5,) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,, ,,,, ,,,, ,,,, ,,,, ,$,"  (4,786",) , ,$,"  1,008", , ,$,  0, , ,$,"  (3,778",) 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

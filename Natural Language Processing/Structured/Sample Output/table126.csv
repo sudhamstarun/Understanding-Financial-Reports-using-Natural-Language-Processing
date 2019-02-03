@@ -1,0 +1,6 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,FixedReceive Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (3)", , ,NotionalAmount (4) , , ,Premiums(Received), , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+HUS, , U.S. Treasury Notes, , ,0.250,% , , ,06/20/2017, , , ,0.167,% , , ,EUR, , , ,"2,100", , ,$,  (4,) , ,$,  5, , ,$,  1, , ,$,  0, 
+, ,, ,,,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

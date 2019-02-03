@@ -1,0 +1,18 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , , , , , , , , , , , , , , , , , , , , , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,Fixed Receive Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (4)", , ,"
+NotionalAmount (5)", , ,Premiums(Received), , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+BOA, , Brazil Government International Bond, , ,1.000,% , , ,09/20/2019, , , ,1.492,% , ,$, , ,"1,100", , ,$,(18), , ,$,4, , ,$,0, , ,$,(14), 
+BPS, , Barclays Bank PLC, , ,1.000, , , ,06/20/2017, , , ,0.570, , ,EUR, , ,500, , , ,(2), , , ,3, , , ,1, , , ,0, 
+, , Royal Bank of Scotland PLC, , ,1.000, , , ,12/20/2021, , , ,1.132, , ,, , ,300, , , ,(4), , , ,2, , , ,0, , , ,(2), 
+CBK, , Brazil Government International Bond, , ,1.000, , , ,03/20/2019, , , ,1.299, , ,$, , ,600, , , ,(12), , , ,8, , , ,0, , , ,(4), 
+DUB, , Brazil Government International Bond, , ,1.000, , , ,03/20/2019, , , ,1.299, , ,, , ,"3,800", , , ,(76), , , ,53, , , ,0, , , ,(23), 
+GST, , Brazil Government International Bond, , ,1.000, , , ,03/20/2019, , , ,1.299, , ,, , ,300, , , ,(6), , , ,4, , , ,0, , , ,(2), 
+HUS, , Brazil Government International Bond, , ,1.000, , , ,09/20/2019, , , ,1.492, , ,, , ,600, , , ,(10), , , ,2, , , ,0, , , ,(8), 
+JPM, , Royal Bank of Scotland PLC, , ,1.000, , , ,12/20/2021, , , ,1.132, , ,EUR, , ,400, , , ,(6), , , ,4, , , ,0, , , ,(2), 
+MYC, , Brazil Government International Bond, , ,1.000, , , ,06/20/2019, , , ,1.406, , ,$, , ,200, , , ,(4), , , ,2, , , ,0, , , ,(2), 
+, , Brazil Government International Bond, , ,1.000, , , ,09/20/2019, , , ,1.492, , ,, , ,"1,300", , , ,(23), , , ,7, , , ,0, , , ,(16), 
+, ,, ,,,, ,,,, ,,,, ,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+,, ,,,, ,,,, ,, ,,,, ,$,  (161), , ,$,  89, , ,$,  1, , ,$,  (73), 
+, ,, ,,,, ,,,, ,,,, ,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

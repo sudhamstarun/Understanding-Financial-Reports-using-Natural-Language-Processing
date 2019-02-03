@@ -1,0 +1,11 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,FixedReceive Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (3)", , ,NotionalAmount (4), , ,PremiumsPaid/(Received), , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+BOA, , Korea Government International Bond, , ,1.000,% , , ,09/20/2022, , , ,0.509,% , ,$,"  1,000", , ,$,11, , ,$,16, , ,$,27, , ,$,0, 
+BPS, , Korea Government International Bond, , ,1.000, , , ,09/20/2022, , , ,0.509, , , ,500, , , ,6, , , ,8, , , ,14, , , ,0, 
+DUB, , Export-Import Bank of China, , ,1.000, , , ,06/20/2017, , , ,0.273, , , ,100, , , ,(4,) , , ,4, , , ,0, , , ,0, 
+MYC, , Korea Government International Bond, , ,1.000, , , ,09/20/2022, , , ,0.509, , , ,200, , , ,3, , , ,2, , , ,5, , , ,0, 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+,, ,,,, ,,,, ,,,, ,$,  16, , ,$,  30, , ,$,  46, , ,$,  0, 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

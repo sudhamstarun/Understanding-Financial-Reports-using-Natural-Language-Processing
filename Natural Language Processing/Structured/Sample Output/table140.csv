@@ -1,0 +1,9 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value 
+(5)", 
+Counterparty,  ,Index/Tranches, ,Fixed Receive Rate, , ,MaturityDate, , ,NotionalAmount (4), , ,Premiums(Received), , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+BRC,  , ABX.HE.AAA.6-2 Index, , ,0.110,% , , ,05/25/2046, , ,$,"8,006", , ,$,"(1,696",) , ,$,635, , ,$,0, , ,$,"(1,061",) 
+JPM,  , ABX.HE.AAA.6-2 Index, , ,0.110, , , ,05/25/2046, , , ,"  24,980", , , ,"(5,158",) , , ,"1,849", , , ,0, , , ,"(3,309",) 
+,  ,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+, ,,,, ,,,, ,,,, ,$,"  (6,854",) , ,$,"  2,484", , ,$,  0, , ,$,"  (4,370",) 
+,  ,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

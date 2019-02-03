@@ -1,0 +1,11 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , , , , , , , , , , , , , , , , , ,"Swap Agreements, at Value (4)", 
+Counterparty  , ,Index/Tranches, ,FixedReceive Rate, , ,MaturityDate, , ,NotionalAmount (3), , ,PremiumsPaid/(Received), , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+GST, , CDX.IG-9 10-Year Index 30-100%, , ,0.548,% , , ,12/20/2017, , ,$,"  4,437", , ,$,0, , ,$,24, , ,$,24, , ,$,0, 
+JPM, , CDX.IG-9 10-Year Index 30-100%, , ,0.553, , , ,12/20/2017, , , ,"9,548", , , ,0, , , ,51, , , ,51, , , ,0, 
+MYC, , CMBX.NA.AAA.3 Index, , ,0.080, , , ,12/13/2049, , , ,"2,569", , , ,(18,) , , ,13, , , ,0, , , ,(5,) 
+, ,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+,, ,,,, ,,,, ,$,  (18,) , ,$,88, , ,$,75, , ,$,(5,) 
+, ,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+ Total Swap Agreements, , ,$,(2,) , ,$,  561, , ,$,  564, , ,$,  (5,) 
+, ,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 

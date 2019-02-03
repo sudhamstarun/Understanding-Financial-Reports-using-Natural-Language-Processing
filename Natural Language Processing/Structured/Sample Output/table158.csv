@@ -1,0 +1,10 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , ,"Swap Agreements, at Value", 
+Counterparty, ,Reference Entity, ,FixedReceive Rate, , ,MaturityDate, , ,"Implied CreditSpread
+atDecember 31, 2016 (3)", , ,NotionalAmount (4), , ,Premiums(Received), , ,UnrealizedAppreciation, , ,Asset, , ,Liability, 
+BOA, , Spain Government International Bond, , ,1.000,% , , ,03/20/2019, , , ,0.406,% , ,$,"  4,100", , ,$,(12,) , ,$,67, , ,$,55, , ,$,0, 
+GST, , Spain Government International Bond, , ,1.000, , , ,03/20/2019, , , ,0.406, , , ,"2,600", , , ,  (11,) , , ,46, , , ,35, , , ,0, 
+HUS, , Spain Government International Bond, , ,1.000, , , ,03/20/2019, , , ,0.406, , , ,"1,900", , , ,(7,) , , ,32, , , ,25, , , ,0, 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
+,, ,,,, ,,,, ,,,, ,$,(30,) , ,$,  145, , ,$,  115, , ,$,  0, 
+, ,, ,,,, ,,,, ,,,, ,,,, ,  ,  , , ,  ,  , , ,  ,  , , ,  ,  , 
