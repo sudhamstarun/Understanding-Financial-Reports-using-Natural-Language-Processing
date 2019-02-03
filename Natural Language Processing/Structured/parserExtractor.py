@@ -24,7 +24,8 @@ def get_tables(soup, p_counter, div_counter):
     pointers to the respective Table object(s).
     """
     table_list = []
-
+    print("The value of p_counter is: " p_counter)
+    print("The value of div_counter is: " div_counter)
     for iterator in range(1, p_counter):
         # Find the first <p> tag with the search text
         table_tag = soup.find("p", {"class": str(iterator)})
@@ -58,11 +59,11 @@ def get_tables(soup, p_counter, div_counter):
 
     for iterator in range(1, div_counter):
         # Find the first <p> tag with the search text
-        table_tag = soup.find("font", {"class": str(iterator)})
+        table_tag = soup.find("div", {"class": str(iterator)})
         # Find the first <table> tag that follows it
         table = table_tag.findNext("table")
         # empty dictionary each time represents our table
-        table_dict = {}
+        div_dict = {}
         rows = table.findAll("tr")
         # count will be the key for each list of values
         count = 0
@@ -82,7 +83,7 @@ def get_tables(soup, p_counter, div_counter):
                 table_dict[count] = value_list
                 count += 1
 
-        table_obj = Table(table_dict)
+        table_obj = Table(div_dict)
         table_list.append(table_obj)
 
         print("Number of div_tables done: ", iterator)
