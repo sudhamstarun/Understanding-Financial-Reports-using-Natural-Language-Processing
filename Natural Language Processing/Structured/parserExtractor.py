@@ -140,16 +140,25 @@ class Table:
         pprint.pprint(self.table_data, width=1)
 
 
+# Initiate the start time of the program
 start = time.time()
+
+# Read the filepath
 program_name = arguments[0]
+
+# Souping
 print("making the soup.........")
 soup, length = append_classID(program_name)
 print("Soup is ready.........")
+
 # get the tables
 tables = get_tables(soup, length)
 print("got the tables.......")
+
 # save the tables
 save_tables(tables)
 print("tables saved.......")
+
+# Printing time taken
 end = time.time()
 print("The total time taken for CDS tables extraction is: ", end - start, "s")
