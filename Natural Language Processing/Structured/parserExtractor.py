@@ -52,7 +52,7 @@ def get_tables(soup, counter):
 
         table_obj = Table(table_dict)
         table_list.append(table_obj)
-
+        print("Number of tables done: ", iterator)
     return table_list
 
 
@@ -126,8 +126,13 @@ class Table:
         Saves a table to csv format under the given file name.
         File name should omit the extension.
         """
-        fname = name + ".csv"
 
+        mypath = arguments[0]
+        fname = name + ".csv"
+        # Creating directory if it doesn't exist
+        if not os.path.isdir(mypath):
+            os.makedirs(mypath)
+        fname = os.path.join(mypath, fname)
         with open(fname, 'w', encoding='utf8') as outf:
             w = csv.writer(outf, dialect="excel")
             li = self.table_data.values()
