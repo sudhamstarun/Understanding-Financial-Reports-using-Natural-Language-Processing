@@ -8,6 +8,7 @@ import csv
 import urllib
 import re
 import sys
+import os
 import time
 
 program_name = sys.argv[0]
@@ -80,7 +81,7 @@ def get_tables(soup, p_counter, div_counter):
                 value_list.append(entry)
             # we don't want empty data packages
             if len(value_list) > 0:
-                table_dict[count] = value_list
+                div_dict[count] = value_list
                 count += 1
 
         table_obj = Table(div_dict)
@@ -101,22 +102,28 @@ def append_classID(filepath):
     soup = bs(data, "lxml")
     searchtext = "Credit Default"
 
-    all_tags = []
     p_counter = 0
     div_counter = 0
     # Find the first <p> tag with the search text
     all_p_tags = soup.find_all("p")
+    print(all_p_tags)
     all_div_tags = soup.find_all("div")
+    print(all_div_tags)
     plengthFoundText = len(all_p_tags)
     divlengthFoundText = len(all_div_tags)
+    print("Length of pLengthFoundtext is: ", plengthFoundText)
+    print("Length of divLengthFoundtext is: ", divlengthFoundText)
+    divlengthFoundText = len(all_div_tags)
+
     for i in range(plengthFoundText):
         if searchtext in all_p_tags[i].text:
             p_counter += 1
-            all_p_tags[i]['class'] = P_counter
+            all_p_tags[i]['class'] = p_counter
+
     for j in range(divlengthFoundText):
-        if searchtext in all_div_tags[i].text:
+        if searchtext in all_div_tags[j].text:
             div_counter += 1
-            all_div_tags[i]['class'] = div_counter
+            all_div_tags[j]['class'] = div_counter
 
     return soup, p_counter, div_counter
 
@@ -169,7 +176,7 @@ class Table:
         File name should omit the extension.
         """
 
-        mypath = arguments[0]
+        mypath = arguments[0].strip(".txt")
         fname = name + ".csv"
         # Creating directory if it doesn't exist
         if not os.path.isdir(mypath):
