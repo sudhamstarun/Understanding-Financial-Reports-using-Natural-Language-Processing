@@ -16,16 +16,16 @@ count = len(arguments)
 # ## Defining the get table functions and supporting functions
 
 
-def get_tables(soup, length):
+def get_tables(soup, counter):
     """
     Extracts each table on the page and places it in a dictionary.
     Converts each dictionary to a Table object. Returns a list of
     pointers to the respective Table object(s).
     """
     table_list = []
-    for iterator in range(0, length):
+    for iterator in range(1, counter):
         # Find the first <p> tag with the search text
-        table_tag = soup.find("p", {"class": iterator})
+        table_tag = soup.find("p", {"class": str(iterator)})
         # Find the first <table> tag that follows it
         table = table_tag.findNext("table")
         # empty dictionary each time represents our table
@@ -65,19 +65,22 @@ def append_classID(filepath):
     soup = bs(data, "lxml")
     searchtext = "Credit Default"
 
-    # Find the first <p> tag with the search text
     all_tags = []
     counter = 0
+    # Find the first <p> tag with the search text
     all_tags = soup.find_all("p")
     lengthFoundText = len(all_tags)
-    print("Number of p tags founds are: ", lengthFoundText)
     for i in range(lengthFoundText):
         if searchtext in all_tags[i].text:
             counter += 1
+            all_tags[i]['class'] = counter
 
-    for i in range(0, counter):
-        if searchtext in all_tags[i].text:
-            all_tags[i]['class'] = i
+    """
+    for j in range(counter):
+        for i in range(lengthFoundText):
+            if searchtext in all_tags[i].text:
+                all_tags[i]['class'] = j
+    """
 
     print("Number of CDS p tags founds are: ", counter)
     return soup, counter
