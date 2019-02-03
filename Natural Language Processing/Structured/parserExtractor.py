@@ -108,7 +108,7 @@ def append_classID(filepath):
     plengthFoundText = len(all_p_tags)
     divlengthFoundText = len(all_div_tags)
     for i in range(plengthFoundText):
-        if searchtext in all_tags[i].text:
+        if searchtext in all_p_tags[i].text:
             p_counter += 1
             all_p_tags[i]['class'] = P_counter
     for j in range(divlengthFoundText):
