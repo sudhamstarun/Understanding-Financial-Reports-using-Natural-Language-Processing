@@ -93,6 +93,11 @@ def get_tables(soup, p_counter, div_counter):
 
 
 def append_classID(filepath):
+    """
+    Append the classID to the p or div (or any tag found in future inspection)
+    tags which contain the different ways of calling CDS and returning the respective
+    tag counters for further processing
+    """
     # Reading Files
     f = open(filepath, 'r')
     data = f.read()
