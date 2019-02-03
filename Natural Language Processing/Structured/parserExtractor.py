@@ -114,9 +114,7 @@ def append_classID(filepath):
     div_counter = 0
     # Find the first <p> tag with the search text
     all_p_tags = soup.find_all("p")
-    print(all_p_tags)
     all_div_tags = soup.find_all("div")
-    print(all_div_tags)
     plengthFoundText = len(all_p_tags)
     divlengthFoundText = len(all_div_tags)
     print("Length of pLengthFoundtext is: ", plengthFoundText)
@@ -132,7 +130,7 @@ def append_classID(filepath):
 
     for j in range(divlengthFoundText):
         for l in range(len(searchtext)):
-            if searchtext in all_div_tags[j].text:
+            if searchtext[k] in all_div_tags[j].text:
                 div_counter += 1
                 all_div_tags[j]['class'] = div_counter
                 break
