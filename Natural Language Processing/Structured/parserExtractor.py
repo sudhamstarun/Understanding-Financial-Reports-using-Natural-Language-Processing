@@ -8,6 +8,7 @@ import csv
 import urllib
 import re
 import sys
+import time
 
 program_name = sys.argv[0]
 arguments = sys.argv[1:]
@@ -140,6 +141,7 @@ class Table:
         pprint.pprint(self.table_data, width=1)
 
 
+start = time.time()
 program_name = arguments[0]
 print("making the soup.........")
 soup, length = append_classID(program_name)
@@ -150,3 +152,5 @@ print("got the tables.......")
 # save the tables
 save_tables(tables)
 print("tables saved.......")
+end = time.time()
+print("The total time taken for CDS tables extraction is: ", end - start, "s")
