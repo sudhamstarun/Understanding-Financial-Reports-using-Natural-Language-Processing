@@ -112,9 +112,19 @@ def append_classID(filepath):
 
     p_counter = 0
     div_counter = 0
+    page_counter = 0
+
     # Find the first <p> tag with the search text
     all_p_tags = soup.find_all("p")
     all_div_tags = soup.find_all("div")
+    page_tag = soup.findAll("page")
+
+    # Renname all <page> tags to <div> since there is no such thing as a <page>
+    if len(page_tag) > 0:
+        for tag_iterator in page_tag:
+            tag_iterator.name = "div"
+        all_div_tags = page_tag
+
     plengthFoundText = len(all_p_tags)
     divlengthFoundText = len(all_div_tags)
     print("Length of pLengthFoundtext is: ", plengthFoundText)
