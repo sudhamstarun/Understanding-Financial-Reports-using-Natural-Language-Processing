@@ -136,21 +136,20 @@ def get_tables(soup, p_counter, div_counter, page_counter):
 
 def tag_closer(filepath):
     with open(filepath, "r+") as f:
-    a = [x.rstrip() for x in f]
-    index = 0
-    for item in a:
-        if(item.startswith("<PAGE>"))
-           if item.startswith("<TABLE>"):
+        a = [x.rstrip() for x in f]
+        index = 0
+        for item in a:
+            if item.startswith("<TABLE>"):
                 # Inserts "Hello everyone" into `a`
                 a.insert(index, "</PAGE>")
                 break
-            index += 1
-    # Go to start of file and clear it
-    f.seek(0)
-    f.truncate()
-    # Write each line back
-    for line in a:
-        f.write(line + "\n")
+                index += 1
+        # Go to start of file and clear it
+        f.seek(0)
+        f.truncate()
+        # Write each line back
+        for line in a:
+            f.write(line + "\n")
 
 
 def append_classID(filepath):
@@ -175,6 +174,7 @@ def append_classID(filepath):
     div_counter = 0
     page_counter = 0
 
+    print(soup)
     # Find the first <p> tag with the search text
     all_p_tags = soup.find_all("p")
     all_div_tags = soup.find_all("div")
@@ -189,20 +189,6 @@ def append_classID(filepath):
     print("Length of pageLengthFoundtext is: ", pagelengthFoundText)
     print("Length of pLengthFoundtext is: ", plengthFoundText)
     print("Length of divLengthFoundtext is: ", divlengthFoundText)
-
-    if pagelengthFoundText > 0:
-        for l in range(len(searchtext)):
-            if searchtext[l] in soup.find_previous_element("table").text:
-                print ("YES YES YES\n")
-
-    """
-    for i in range(pagelengthFoundText):
-        page_counter += 1
-        all_page_tags[i]['class'] = page_counter
-    # print("----------- PRINTING PAGE TEXT HERE --------------------------------")
-    # print(soup.find("page", {"class": str(1)}))
-    # print("----------- PRINTING PAGE TEXT ENDS HERE --------------------------------")
-    """
 
     for i in range(plengthFoundText):
         for k in range(len(searchtext)):
@@ -303,9 +289,6 @@ start = time.time()
 
 # Read the filepath
 program_name = arguments[0]
-
-print("Closing required tags")
-tag_closer(program_name)
 
 # Souping
 print("making the soup.........")
