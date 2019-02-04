@@ -68,24 +68,30 @@ def get_tables(soup, p_counter, div_counter):
         table = table_tag.findNext("table")
         # empty dictionary each time represents our table
         div_dict = {}
-        rows = table.findAll("tr")
-        # count will be the key for each list of values
-        count = 0
-        for row in rows:
-            value_list = []
-            entries = row.findAll("td")
-            for entry in entries:
-                # fix the encoding issues with utf-8
-                entry = entry.text.encode("utf-8", "ignore")
-                strip_unicode = re.compile(
-                    "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
-                entry = entry.decode("utf-8")
-                entry = strip_unicode.sub(" ", entry)
-                value_list.append(entry)
-            # we don't want empty data packages
-            if len(value_list) > 0:
-                div_dict[count] = value_list
-                count += 1
+
+        if table.find("caption"):
+            caption_text = table.findAll("caption")
+            print(caption_text)
+
+        else:
+            rows = table.findAll("tr")
+            # count will be the key for each list of values
+            count = 0
+            for row in rows:
+                value_list = []
+                entries = row.findAll("td")
+                for entry in entries:
+                    # fix the encoding issues with utf-8
+                    entry = entry.text.encode("utf-8", "ignore")
+                    strip_unicode = re.compile(
+                        "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
+                    entry = entry.decode("utf-8")
+                    entry = strip_unicode.sub(" ", entry)
+                    value_list.append(entry)
+                # we don't want empty data packages
+                if len(value_list) > 0:
+                    div_dict[count] = value_list
+                    count += 1
 
         table_obj = Table(div_dict)
         table_list.append(table_obj)
