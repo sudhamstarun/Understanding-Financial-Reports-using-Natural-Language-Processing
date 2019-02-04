@@ -27,6 +27,8 @@ def get_tables(soup, p_counter, div_counter):
     table_list = []
     print("The value of p_counter is: ",  p_counter)
     print("The value of div_counter is: ", div_counter)
+
+    # Extracting tables after a certain p tag
     for iterator in range(1, p_counter):
         # Find the first <p> tag with the search text
         table_tag = soup.find("p", {"class": str(iterator)})
@@ -58,6 +60,7 @@ def get_tables(soup, p_counter, div_counter):
 
         print("Number of p_tables done: ", iterator)
 
+    #  Extracting tables after a certain div tag
     for iterator in range(1, div_counter):
         # Find the first <p> tag with the search text
         table_tag = soup.find("div", {"class": str(iterator)})
