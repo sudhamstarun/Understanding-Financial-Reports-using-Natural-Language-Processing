@@ -18,7 +18,7 @@ count = len(arguments)
 # ## Defining the get table functions and supporting functions
 
 
-def get_tables(soup, p_counter, div_counter):
+def get_tables(soup, p_counter, div_counter, page_counter):
     """
     Extracts each table on the page and places it in a dictionary.
     Converts each dictionary to a Table object. Returns a list of
@@ -27,6 +27,7 @@ def get_tables(soup, p_counter, div_counter):
     table_list = []
     print("The value of p_counter is: ",  p_counter)
     print("The value of div_counter is: ", div_counter)
+    print("The value of page_counter is: ", page_counter)
 
     # Extracting tables after a certain p tag
     for iterator in range(1, p_counter):
@@ -68,37 +69,90 @@ def get_tables(soup, p_counter, div_counter):
         table = table_tag.findNext("table")
         # empty dictionary each time represents our table
         div_dict = {}
-
-        if table.find("caption"):
-            caption_text = table.findAll("caption")
-            print(caption_text)
-
-        else:
-            rows = table.findAll("tr")
-            # count will be the key for each list of values
-            count = 0
-            for row in rows:
-                value_list = []
-                entries = row.findAll("td")
-                for entry in entries:
-                    # fix the encoding issues with utf-8
-                    entry = entry.text.encode("utf-8", "ignore")
-                    strip_unicode = re.compile(
-                        "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
-                    entry = entry.decode("utf-8")
-                    entry = strip_unicode.sub(" ", entry)
-                    value_list.append(entry)
-                # we don't want empty data packages
-                if len(value_list) > 0:
-                    div_dict[count] = value_list
-                    count += 1
+        rows = table.findAll("tr")
+        # count will be the key for each list of values
+        count = 0
+        for row in rows:
+            value_list = []
+            entries = row.findAll("td")
+            for entry in entries:
+                # fix the encoding issues with utf-8
+                entry = entry.text.encode("utf-8", "ignore")
+                strip_unicode = re.compile(
+                    "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
+                entry = entry.decode("utf-8")
+                entry = strip_unicode.sub(" ", entry)
+                value_list.append(entry)
+            # we don't want empty data packages
+            if len(value_list) > 0:
+                div_dict[count] = value_list
+                count += 1
 
         table_obj = Table(div_dict)
         table_list.append(table_obj)
 
         print("Number of div_tables done: ", iterator)
 
+    """
+
+    # Extracting tables from the page tag
+
+    for iterator in range(1, page_counter):
+        # Find the first <p> tag with the search text
+        table_tag = soup.find("page", {"class": str(iterator)})
+        # Find the first <table> tag that follows it
+        table = table_tag.findNext("table")
+        # empty dictionary each time represents our table
+        div_dict = {}
+        caption_text = table.findAll("caption")
+
+        # if caption_text != None:
+
+        # else:
+        rows = table.findAll("tr")
+        # count will be the key for each list of values
+        count = 0
+        for row in rows:
+            value_list = []
+            entries = row.findAll("td")
+            for entry in entries:
+                # fix the encoding issues with utf-8
+                entry = entry.text.encode("utf-8", "ignore")
+                strip_unicode = re.compile(
+                    "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
+                entry = entry.decode("utf-8")
+                entry = strip_unicode.sub(" ", entry)
+                value_list.append(entry)
+            # we don't want empty data packages
+            if len(value_list) > 0:
+                div_dict[count] = value_list
+                count += 1
+
+        table_obj = Table(div_dict)
+        table_list.append(table_obj)
+
+        print("Number of page_tables done: ", iterator)
+    """
+
     return table_list
+
+
+def tag_closer(filepath):
+    with open(filepath, "r+") as f:
+        a = [x.rstrip() for x in f]
+        index = 0
+        for item in a:
+            if item.startswith("<TABLE>"):
+                # Inserts "Hello everyone" into `a`
+                a.insert(index, "</PAGE>")
+                break
+                index += 1
+        # Go to start of file and clear it
+        f.seek(0)
+        f.truncate()
+        # Write each line back
+        for line in a:
+            f.write(line + "\n")
 
 
 def append_classID(filepath):
@@ -122,23 +176,20 @@ def append_classID(filepath):
     p_counter = 0
     div_counter = 0
     page_counter = 0
-
     # Find the first <p> tag with the search text
     all_p_tags = soup.find_all("p")
     all_div_tags = soup.find_all("div")
-    page_tag = soup.findAll("page")
+    all_page_tags = soup.findAll("page")
 
     # Renname all <page> tags to <div> since there is no such thing as a <page>
-    if len(page_tag) > 0:
-        for tag_iterator in page_tag:
-            tag_iterator.name = "div"
-        all_div_tags = page_tag
 
     plengthFoundText = len(all_p_tags)
     divlengthFoundText = len(all_div_tags)
+    pagelengthFoundText = len(all_page_tags)
+
+    print("Length of pageLengthFoundtext is: ", pagelengthFoundText)
     print("Length of pLengthFoundtext is: ", plengthFoundText)
     print("Length of divLengthFoundtext is: ", divlengthFoundText)
-    divlengthFoundText = len(all_div_tags)
 
     for i in range(plengthFoundText):
         for k in range(len(searchtext)):
@@ -154,7 +205,26 @@ def append_classID(filepath):
                 all_div_tags[j]['class'] = div_counter
                 break
 
-    return soup, p_counter, div_counter
+    for b in range(pagelengthFoundText):
+        for a in range(len(searchtext)):
+            if searchtext[a] in all_page_tags[b].text:
+                page_counter += 1
+                all_page_tags[b]['class'] = page_counter
+                break
+
+    for i in range(page_counter):
+        for page in soup.findAll('page', attrs={'class': str(i)}):
+            print page.text
+
+    #tables_needed = soup.findAll(text='\bCredit\s+Default\b').findNext("table")
+
+    # print(tables_needed)
+
+    print("The value of p_counter is: ",  p_counter)
+    print("The value of div_counter is: ", div_counter)
+    print("The value of page_counter is: ", page_counter)
+
+    return soup, p_counter, div_counter, page_counter
 
 
 def save_tables(tables):
@@ -231,11 +301,11 @@ program_name = arguments[0]
 
 # Souping
 print("making the soup.........")
-soup, p_counter, div_counter = append_classID(program_name)
+soup, p_counter, div_counter, page_counter = append_classID(program_name)
 print("Soup is ready.........")
 
 # get the tables
-tables = get_tables(soup, p_counter, div_counter)
+tables = get_tables(soup, p_counter, div_counter, page_counter)
 print("got the tables.......")
 
 # save the tables
