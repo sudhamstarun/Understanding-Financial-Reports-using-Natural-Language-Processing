@@ -205,7 +205,6 @@ def append_classID(filepath):
                 all_div_tags[j]['class'] = div_counter
                 break
 
-    """
     for b in range(pagelengthFoundText):
         for a in range(len(searchtext)):
             if searchtext[a] in all_page_tags[b].text:
@@ -213,10 +212,14 @@ def append_classID(filepath):
                 all_page_tags[b]['class'] = page_counter
                 break
 
-    tables_needed = soup.findAll(text='\bCredit\s+Default\b').findNext("table")
+    for i in range(page_counter):
+        for page in soup.findAll('page', attrs={'class': str(i)}):
+            print page.text
 
-    print(tables_needed)
-    """
+    #tables_needed = soup.findAll(text='\bCredit\s+Default\b').findNext("table")
+
+    # print(tables_needed)
+
     print("The value of p_counter is: ",  p_counter)
     print("The value of div_counter is: ", div_counter)
     print("The value of page_counter is: ", page_counter)
