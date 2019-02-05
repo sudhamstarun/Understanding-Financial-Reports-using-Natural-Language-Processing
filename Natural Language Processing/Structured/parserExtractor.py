@@ -93,6 +93,8 @@ def get_tables(soup, p_counter, div_counter, page_counter):
 
         print("Number of div_tables done: ", iterator)
 
+    """
+
     # Extracting tables from the page tag
 
     for iterator in range(1, page_counter):
@@ -130,6 +132,7 @@ def get_tables(soup, p_counter, div_counter, page_counter):
         table_list.append(table_obj)
 
         print("Number of page_tables done: ", iterator)
+    """
 
     return table_list
 
@@ -173,8 +176,6 @@ def append_classID(filepath):
     p_counter = 0
     div_counter = 0
     page_counter = 0
-
-    print(soup)
     # Find the first <p> tag with the search text
     all_p_tags = soup.find_all("p")
     all_div_tags = soup.find_all("div")
@@ -204,6 +205,7 @@ def append_classID(filepath):
                 all_div_tags[j]['class'] = div_counter
                 break
 
+    """
     for b in range(pagelengthFoundText):
         for a in range(len(searchtext)):
             if searchtext[a] in all_page_tags[b].text:
@@ -211,6 +213,10 @@ def append_classID(filepath):
                 all_page_tags[b]['class'] = page_counter
                 break
 
+    tables_needed = soup.findAll(text='\bCredit\s+Default\b').findNext("table")
+
+    print(tables_needed)
+    """
     print("The value of p_counter is: ",  p_counter)
     print("The value of div_counter is: ", div_counter)
     print("The value of page_counter is: ", page_counter)
