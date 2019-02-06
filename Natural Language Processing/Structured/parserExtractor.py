@@ -211,7 +211,7 @@ def append_classID(filepath):
     for b in range(pagelengthFoundText):
         for a in range(len(searchtext)):
             if searchtext[a] in all_page_tags[b].text:
-                page_counter += 1
+                   page_counter += 1
                 all_page_tags[b]['class'] = page_counter
                 break
     """
