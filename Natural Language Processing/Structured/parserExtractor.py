@@ -96,7 +96,6 @@ def get_tables(soup, p_counter, div_counter):
             print("Number of div_tables done: ", iterator)
 
     """
-
     # Extracting tables from the page tag
 
     for iterator in range(1, page_counter):
@@ -188,7 +187,7 @@ def append_classID(filepath):
 
     plengthFoundText = len(all_p_tags)
     divlengthFoundText = len(all_div_tags)
-    pagelengthFoundText = len(all_page_tags)
+    #pagelengthFoundText = len(all_page_tags)
 
     #print("Length of pageLengthFoundtext is: ", pagelengthFoundText)
     print("Length of pLengthFoundtext is: ", plengthFoundText)
