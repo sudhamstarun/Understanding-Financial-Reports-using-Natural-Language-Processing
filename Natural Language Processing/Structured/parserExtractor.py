@@ -299,7 +299,7 @@ soup, p_counter, div_counter = append_classID(program_name)
 print("Soup is ready.........")
 
 # get the tables
-tables = get_tables(soup, p_counter, div_counter, page_counter)
+tables = get_tables(soup, p_counter, div_counter)
 print("got the tables.......")
 
 # save the tables
