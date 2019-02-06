@@ -22,6 +22,7 @@ docutils==0.14
 entrypoints==0.3
 enum34==1.1.6
 funcsigs==1.0.2
+functools32==3.2.3.post2
 futures==3.2.0
 gast==0.2.2
 gensim==3.7.0
