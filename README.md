@@ -17,10 +17,10 @@ Before SEC has requested more frequent and detailed fund holdings reporting at t
 ## Tools Used
 
 1. For tagging the entities in the reports, I developed a annotation tool which can be found here: `https://github.com/sudhamstarun/Text-Annotation-Tool`
+2. The core of this project can be recognised as a Named Entity Recognition Task, so we implemented a BiLSTM-CRF model to conduct sequence labelling on unsturctured data. Its implementation is still in progress and can be found here: `https://github.com/sudhamstarun/AwesomeNER`
+   _more updates to follow as the project progresses_
 
-*more updates to follow as the project progresses*
-
-## Authors: 
+## Authors:
 
 [Tarun Sudhams](https://github.com/sudhamstarun)
 [Varun Vamsi](https://github.com/Varunvamsi)
