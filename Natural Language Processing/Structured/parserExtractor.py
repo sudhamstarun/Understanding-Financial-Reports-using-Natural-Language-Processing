@@ -30,7 +30,7 @@ def get_tables(soup, p_counter, div_counter):
     print("The value of div_counter is: ", div_counter)
 
     # Extracting tables after a certain p tag
-    for iterator in range(1, p_counter):
+    for iterator in range(1, p_counter+1):
         # Find the first <p> tag with the search text
         table_tag = soup.find("p", {"class": str(iterator)})
         # Find the first <table> tag that follows it
@@ -45,12 +45,22 @@ def get_tables(soup, p_counter, div_counter):
             entries = row.findAll("td")
             for entry in entries:
                 # fix the encoding issues with utf-8
-                entry = entry.text.encode("utf-8", "ignore")
-                strip_unicode = re.compile(
-                    "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
-                entry = entry.decode("utf-8")
-                entry = strip_unicode.sub(" ", entry)
-                value_list.append(entry)
+                if entry.find("p"):
+                    entry = entry.find(
+                        "p").text.encode("utf-8", "ignore")
+                    strip_unicode = re.compile(
+                        "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
+                    entry = entry.decode("utf-8")
+                    entry = strip_unicode.sub(" ", entry)
+                    value_list.append(entry)
+
+                else:
+                    entry = entry.text.encode("utf-8", "ignore")
+                    strip_unicode = re.compile(
+                        "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
+                    entry = entry.decode("utf-8")
+                    entry = strip_unicode.sub(" ", entry)
+                    value_list.append(entry)
             # we don't want empty data packages
             if len(value_list) > 0:
                 table_dict[count] = value_list
@@ -63,7 +73,7 @@ def get_tables(soup, p_counter, div_counter):
 
     # Extracting tables from the div tag
 
-    for iterator in range(1, div_counter):
+    for iterator in range(1, div_counter+1):
         # Find the first <p> tag with the search text
         table_tag = soup.find("div", {"class": str(iterator)})
         # Find the first <table> tag that follows it
@@ -171,7 +181,7 @@ def append_classID(filepath):
 
     # Adding multiple reporting styles used in reoprts to mention CDS information
     searchtext = ["Credit Default", "CDS Contract",
-                  "Default Swap", "Default Contract", "Default Protection", "Credit Derivative"]
+                  "Default Swap", "Default Contract", "Default Protection", "Credit Derivative", "credit default swap", "credit default"]
 
     p_counter = 0
     div_counter = 0
@@ -209,7 +219,7 @@ def append_classID(filepath):
     for b in range(pagelengthFoundText):
         for a in range(len(searchtext)):
             if searchtext[a] in all_page_tags[b].text:
-                   page_counter += 1
+                page_counter += 1
                 all_page_tags[b]['class'] = page_counter
                 break
     """
