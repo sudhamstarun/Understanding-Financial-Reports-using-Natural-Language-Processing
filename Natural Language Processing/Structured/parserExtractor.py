@@ -19,7 +19,7 @@ count = len(arguments)
 # ## Defining the get table functions and supporting functions
 
 
-def get_tables(soup, p_counter, div_counter):
+def get_tables(soup, p_counter, div_counter, table_counter):
     """
     Extracts each table on the page and places it in a dictionary.
     Converts each dictionary to a Table object. Returns a list of
@@ -106,14 +106,12 @@ def get_tables(soup, p_counter, div_counter):
 
     # Extracting tables from the page tag
 
-    for iterator in range(1, page_counter):
+    for iterator in range(1, table_counter+1):
         # Find the first <p> tag with the search text
-        table_tag = soup.find("page", {"class": str(iterator)})
-        # Find the first <table> tag that follows it
-        table = table_tag.findNext("table")
+        table_tag = soup.find("table", {"class": str(iterator)})
         # empty dictionary each time represents our table
         div_dict = {}
-        caption_text = table.findAll("caption")
+        caption_text = table.findNext("caption")
 
         for captions in caption_text:
             print (captions.text)
@@ -143,7 +141,7 @@ def get_tables(soup, p_counter, div_counter):
         table_obj = Table(div_dict)
         table_list.append(table_obj)
         """
-        print("Number of page_tables done: ", iterator)
+        print("Number of table_tables done: ", iterator)
 
     return table_list
 
@@ -195,6 +193,7 @@ def append_classID(filepath):
     div_counter = 0
     page_counter = 0
     table_counter = 0
+    word_counter = 0
 
     # Find the first <p> tag with the search text
     all_p_tags = soup.find_all("p")
@@ -207,20 +206,20 @@ def append_classID(filepath):
     divlengthFoundText = len(all_div_tags)
     pagelengthFoundText = len(all_page_tags)
 
-    print("Length of divLengthFoundtext is: ", divlengthFoundText)
-
     if pagelengthFoundText > 0:
         print("Length of pageTableLengthFoundtext is: ", pagelengthFoundText)
         all_table_tags = soup.findAll("table")
         tablelengthFoundText = len(all_table_tags)
         print("Length of tableLengthFoundtext is: ", tablelengthFoundText)
 
-        for b in range(pagelengthFoundText):
+        for b in range(tablelengthFoundText):
             for a in range(len(searchtext)):
-                if searchtext_pageTable[a] in all_page_tags[b].text:
-                    page_counter += 1
-                    all_page_tags[b]['class'] = page_counter
-                    break
+                if searchtext_pageTable[a] in all_tables_tags[b].text:
+                    word_counter += 1s
+            if word_counter == 3:
+                page_counter += 1
+                all_table_tags[b]['class'] = table_counter
+                break
 
     if plengthFoundText > 0:
         print("Length of pLengthFoundtext is: ", plengthFoundText)
@@ -242,7 +241,7 @@ def append_classID(filepath):
 
     print("The value of p_counter is: ",  p_counter)
     print("The value of div_counter is: ", div_counter)
-    print("The value of page_counter is: ", page_counter)
+    print("The value of table_counter is: ", table_counter)
 
     return soup, p_counter, div_counter, table_counter
 
@@ -320,12 +319,10 @@ start = time.time()
 program_name = arguments[0]
 
 # close <page> tag
-tag_closer(program_name)
+# tag_closer(program_name)
 # Souping
 print("making the soup.........")
-soup, p_counter, div_counter = append_classID(program_name)
-print(soup)
-exit()
+soup, p_counter, div_counter, table_counter = append_classID(program_name)
 print("Soup is ready.........")
 
 # get the tables
