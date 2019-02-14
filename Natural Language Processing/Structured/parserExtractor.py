@@ -188,7 +188,8 @@ def append_classID(filepath):
     searchtext = ["Credit Default", "CDS Contract",
                   "Default Swap", "Default Contract", "Default Protection", "Credit Derivative", "credit default swap", "credit default"]
 
-    searchtext_pageTable = {"NOTIONAL AMOUNT", "REFERENCE ENTITY"}
+    searchtext_pageTable = ["NOTIONAL AMOUNT",
+                            "REFERENCE ENTITY", "COUNTERPARTY"]
 
     p_counter = 0
     div_counter = 0
