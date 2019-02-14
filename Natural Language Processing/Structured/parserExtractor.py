@@ -134,7 +134,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         table_obj = Table(div_dict)
         table_list.append(table_obj)
         """
-        print("Number of table_tables done: ", iterator)
+        print("Number of caption_tables done: ", iterator)
 
     return table_list
 
