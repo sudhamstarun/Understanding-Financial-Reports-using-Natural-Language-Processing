@@ -149,21 +149,25 @@ def get_tables(soup, p_counter, div_counter):
 
 
 def tag_closer(filepath):
-    with open(filepath, "r+") as f:
-        a = [x.rstrip() for x in f]
-        index = 0
-        for item in a:
-            if item.startswith("<TABLE>"):
-                # Inserts "Hello everyone" into `a`
-                a.insert(index, "</PAGE>")
-                break
-                index += 1
-        # Go to start of file and clear it
-        f.seek(0)
-        f.truncate()
-        # Write each line back
-        for line in a:
-            f.write(line + "\n")
+    lines = []
+    with open(filepath) as f:
+        lines = f.readlines()
+
+    ins_at = find_occurences_of('<PAGE>', lines)
+
+    for i in ins_at:
+        lines.insert(i, '</PAGE>')
+
+    with open(filepath, 'w') as f:
+        f.writelines(lines)
+
+
+def find_occurences_of(needle, haystack):
+    ret = []
+    for i, line in enumerate(haystack):
+        if line.startswith(needle):
+            ret.append(i)
+    return ret
 
 
 def append_classID(filepath):
@@ -179,60 +183,67 @@ def append_classID(filepath):
 
     # Making soup
     soup = bs(data, "lxml")
-
+    soup.prettify()
     # Adding multiple reporting styles used in reoprts to mention CDS information
     searchtext = ["Credit Default", "CDS Contract",
                   "Default Swap", "Default Contract", "Default Protection", "Credit Derivative", "credit default swap", "credit default"]
 
-    searchtext_pageTable = [" REFERENCE ENTITY ",
-        "COUNTERPARTY" "BUY/SELL", "EXPIRATION"]
+    searchtext_pageTable = {"NOTIONAL AMOUNT", "REFERENCE ENTITY"}
 
     p_counter = 0
     div_counter = 0
-    # page_counter = 0
+    page_counter = 0
+    table_counter = 0
 
     # Find the first <p> tag with the search text
     all_p_tags = soup.find_all("p")
     all_div_tags = soup.find_all("div")
-    if(len(soup.findAll("page") > 0):
-        all_pageTable_tags=soup.findAll("table")
+    all_page_tags = soup.findAll("page")
 
     # Renname all <page> tags to <div> since there is no such thing as a <page>
 
-    plengthFoundText=len(all_p_tags)
-    divlengthFoundText=len(all_div_tags)
-    pagelengthFoundText=len(all_pageTable_tags)
+    plengthFoundText = len(all_p_tags)
+    divlengthFoundText = len(all_div_tags)
+    pagelengthFoundText = len(all_page_tags)
 
-    print("Length of pageTableLengthFoundtext is: ", pagelengthFoundText)
-    print("Length of pLengthFoundtext is: ", plengthFoundText)
     print("Length of divLengthFoundtext is: ", divlengthFoundText)
 
-    for i in range(plengthFoundText):
-        for k in range(len(searchtext)):
-            if searchtext[k] in all_p_tags[i].text:
-                p_counter += 1
-                all_p_tags[i]['class']=p_counter
-                break
+    if pagelengthFoundText > 0:
+        print("Length of pageTableLengthFoundtext is: ", pagelengthFoundText)
+        all_table_tags = soup.findAll("table")
+        tablelengthFoundText = len(all_table_tags)
+        print("Length of tableLengthFoundtext is: ", tablelengthFoundText)
 
-    for j in range(divlengthFoundText):
-        for l in range(len(searchtext)):
-            if searchtext[l] in all_div_tags[j].text:
-                div_counter += 1
-                all_div_tags[j]['class']=div_counter
-                break
+        for b in range(pagelengthFoundText):
+            for a in range(len(searchtext)):
+                if searchtext_pageTable[a] in all_page_tags[b].text:
+                    page_counter += 1
+                    all_page_tags[b]['class'] = page_counter
+                    break
 
-    for b in range(pagelengthFoundText):
-        for a in range(len(searchtext)):
-            if searchtext_pageTable[a] in all_page_tags[b].text:
-                page_counter += 1
-                all_page_tags[b]['class']=page_counter
-                break
+    if plengthFoundText > 0:
+        print("Length of pLengthFoundtext is: ", plengthFoundText)
+        for i in range(plengthFoundText):
+            for k in range(len(searchtext)):
+                if searchtext[k] in all_p_tags[i].text:
+                    p_counter += 1
+                    all_p_tags[i]['class'] = p_counter
+                    break
+
+    if divlengthFoundText > 0:
+        print("Length of divLengthFoundtext is: ", divlengthFoundText)
+        for j in range(divlengthFoundText):
+            for l in range(len(searchtext)):
+                if searchtext[l] in all_div_tags[j].text:
+                    div_counter += 1
+                    all_div_tags[j]['class'] = div_counter
+                    break
 
     print("The value of p_counter is: ",  p_counter)
     print("The value of div_counter is: ", div_counter)
-    # print("The value of page_counter is: ", page_counter)
+    print("The value of page_counter is: ", page_counter)
 
-    return soup, p_counter, div_counter
+    return soup, p_counter, div_counter, table_counter
 
 
 def save_tables(tables):
@@ -240,14 +251,14 @@ def save_tables(tables):
     Takes an input a list of table objects and saves each
     table to csv format.
     """
-    counter=1
+    counter = 1
     for table in tables:
-        name="table" + str(counter)
+        name = "table" + str(counter)
         table.save_table(name)
         counter += 1
 
 
-Metadata=namedtuple("Metadata", "num_cols num_entries")
+Metadata = namedtuple("Metadata", "num_cols num_entries")
 
 
 class Table:
@@ -257,7 +268,7 @@ class Table:
         Stores a given table as a dictionary. The keys are the headings and the
         values are the data, represented as lists.
         """
-        self.table_data=data
+        self.table_data = data
 
     def get_metadata(self):
         """
@@ -265,9 +276,9 @@ class Table:
         and the total number of entries.
         """
 
-        col_headings=self.table_data.keys()
-        num_cols=len(col_headings)
-        num_entries=0
+        col_headings = self.table_data.keys()
+        num_cols = len(col_headings)
+        num_entries = 0
 
         for heading in col_headings:
             num_entries += len(self.table_data[heading])
@@ -283,15 +294,15 @@ class Table:
         File name should omit the extension.
         """
 
-        mypath=arguments[0].strip(".txt")
-        fname=name + ".csv"
+        mypath = arguments[0].strip(".txt")
+        fname = name + ".csv"
         # Creating directory if it doesn't exist
         if not os.path.isdir(mypath):
             os.makedirs(mypath)
-        fname=os.path.join(mypath, fname)
+        fname = os.path.join(mypath, fname)
         with open(fname, 'w', encoding='utf8') as outf:
-            w=csv.writer(outf, dialect="excel")
-            li=self.table_data.values()
+            w = csv.writer(outf, dialect="excel")
+            li = self.table_data.values()
             w.writerows(li)
 
     def show_table(self):
@@ -302,18 +313,22 @@ class Table:
 
 
 # Initiate the start time of the program
-start=time.time()
+start = time.time()
 
 # Read the filepath
-program_name=arguments[0]
+program_name = arguments[0]
 
+# close <page> tag
+tag_closer(program_name)
 # Souping
 print("making the soup.........")
-soup, p_counter, div_counter, page=append_classID(program_name)
+soup, p_counter, div_counter = append_classID(program_name)
+print(soup)
+exit()
 print("Soup is ready.........")
 
 # get the tables
-tables=get_tables(soup, p_counter, div_counter)
+tables = get_tables(soup, p_counter, div_counter)
 print("got the tables.......")
 
 # save the tables
@@ -321,5 +336,5 @@ save_tables(tables)
 print("tables saved.......")
 
 # Printing time taken
-end=time.time()
+end = time.time()
 print("The total time taken for CDS tables extraction is: ", end - start, "s")
