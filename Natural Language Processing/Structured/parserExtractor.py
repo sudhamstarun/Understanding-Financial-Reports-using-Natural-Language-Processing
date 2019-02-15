@@ -117,15 +117,15 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         caption_dict = {}
         # if caption_text != None:
         record = caption_tag.text
-        df = pd.read_fwf(StringIO(record))
-        df = df.fillna('')
+
+        df = pd.read_table(StringIO(record), sep=r"\s*", header=None)
+        df = df.fillna(' ')
+        caption_dict = df.set_index('id').to_dict()
 
         # Figure how to save the file
-
-        """
         table_obj = Table(caption_dict)
         table_list.append(table_obj)
-        """
+
         print("Number of caption_tables done: ", iterator)
 
     return table_list
