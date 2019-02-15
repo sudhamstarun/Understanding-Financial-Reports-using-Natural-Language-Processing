@@ -134,7 +134,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         table_obj = Table(div_dict)
         table_list.append(table_obj)
         """
-        print("Number of caption_tables done: ", iterator)
+        print("Number of table_tables done: ", iterator)
 
     return table_list
 
@@ -179,8 +179,8 @@ def append_classID(filepath):
     searchtext = ["Credit Default", "CDS Contract",
                   "Default Swap", "Default Contract", "Default Protection", "Credit Derivative", "credit default swap", "credit default"]
 
-    searchtext_pageTable = ["NOTIONAL AMOUNT",
-                            "REFERENCE ENTITY", "COUNTERPARTY"]
+    searchtext_pageTable = ["NOTIONAL",
+                            "REFERENCE ENTITY", "COUNTERPARTY", "EXPIRATION"]
 
     p_counter = 0
     div_counter = 0
@@ -205,12 +205,15 @@ def append_classID(filepath):
         for b in range(captionlengthFoundText):
             for a in range(len(searchtext_pageTable)):
                 if searchtext_pageTable[a] in all_caption_tags[b].text:
+                    print("Word Found in Caption Table: ",
+                          searchtext_pageTable[a])
                     word_counter += 1
 
-            if word_counter > 0:
-                print(all_caption_tags[].text)
-                page_counter += 1
-                all_caption_tags[b]['class'] = table_counter
+                if word_counter == 4:
+                    print(all_caption_tags[b].text)
+                    page_counter += 1
+                    all_caption_tags[b]['class'] = table_counter
+                    break
 
     if plengthFoundText > 0:
         print("Length of pLengthFoundtext is: ", plengthFoundText)
