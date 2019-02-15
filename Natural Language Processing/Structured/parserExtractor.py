@@ -184,9 +184,7 @@ def append_classID(filepath):
 
     p_counter = 0
     div_counter = 0
-    page_counter = 0
     table_counter = 0
-    word_counter = 0
 
     # Find the first <p> tag with the search text
     all_p_tags = soup.find_all("p")
@@ -201,19 +199,18 @@ def append_classID(filepath):
 
     if captionlengthFoundText > 0:
         print("Length of captionLengthFoundtext is: ", captionlengthFoundText)
-
         for b in range(captionlengthFoundText):
+            word_counter = 0
             for a in range(len(searchtext_pageTable)):
                 if searchtext_pageTable[a] in all_caption_tags[b].text:
                     print("Word Found in Caption Table: ",
                           searchtext_pageTable[a])
                     word_counter += 1
 
-                if word_counter == 4:
-                    print(all_caption_tags[b].text)
-                    page_counter += 1
-                    all_caption_tags[b]['class'] = table_counter
-                    break
+            if word_counter == 4:
+                print(all_caption_tags[b].text)
+                table_counter += 1
+                all_caption_tags[b]['class'] = table_counter
 
     if plengthFoundText > 0:
         print("Length of pLengthFoundtext is: ", plengthFoundText)
