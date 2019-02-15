@@ -1,8 +1,9 @@
 from bs4 import BeautifulSoup as bs
 from bs4 import NavigableString
 from collections import namedtuple
-import itertools
 
+import itertools
+import pandas as pd
 import pprint
 import csv
 import urllib
@@ -110,7 +111,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         # empty dictionary each time represents our table
         caption_dict = {}
         # if caption_text != None:
-        caption_dict[table_counter] = caption_tag
+        caption_dict[table_counter] = caption_tag.text
 
         """
         # else:
