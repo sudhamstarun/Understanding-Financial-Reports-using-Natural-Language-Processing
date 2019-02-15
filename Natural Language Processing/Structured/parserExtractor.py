@@ -137,7 +137,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
 
         fname = os.path.join(mypath, fname)
         counter += 1
-        df.to_csv(fname, header=None encoding='utf-8')
+        df.to_csv(fname, header=None, encoding='utf-8', index=False)
 
     return table_list
 
