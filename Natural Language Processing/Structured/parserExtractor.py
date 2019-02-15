@@ -1,11 +1,16 @@
 from bs4 import BeautifulSoup as bs
 from bs4 import NavigableString
 from collections import namedtuple
+from prettytable import PrettyTable
 from io import StringIO
 
-import numpy as np
+
+import itertools
+import pandas as pd
 import pprint
 import csv
+import struct
+import json
 import urllib
 import re
 import sys
@@ -127,8 +132,9 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         print(data)
         """
 
-        lol = np.genfromtxt(StringIO(record))
-        print(lol)
+        df = pd.read_fwf(StringIO(record))
+        df = df.fillna('')
+        print(df)
 
         """
         # else:
