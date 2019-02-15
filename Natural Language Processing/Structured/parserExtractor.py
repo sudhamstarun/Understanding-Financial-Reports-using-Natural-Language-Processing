@@ -124,8 +124,6 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         df = df.fillna(' ')
         caption_dict = df.to_dict()
         """
-        read_success = agate.fixed.reader(record)
-        print(read_success)
 
         print("Number of caption_tables done: ", iterator)
 
