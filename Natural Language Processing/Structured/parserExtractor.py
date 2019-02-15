@@ -114,10 +114,24 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         # empty dictionary each time represents our table
         caption_dict = {}
         # if caption_text != None:
+
         final_text = ""
         record = caption_tag.text
-        values = space.split(record)
-        final_text += ('"' + '","'.join(values) + '"\n')
+
+        """
+        for line in record:
+            # unpack line to tuple
+            fields = struct.Struct(mask).unpack_from(line)
+
+            # strip any whitespace for each field
+            # pack everything in a list and add to full dataset
+            data.append(list([f.strip().decode("utf-8") for f in fields]))
+
+        print(data)
+        """
+
+        lol = pd.read_fwf(record)
+        print(lol)
 
         """
         # else:
