@@ -116,51 +116,17 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         # empty dictionary each time represents our table
         caption_dict = {}
         # if caption_text != None:
-
-        final_text = ""
         record = caption_tag.text
-
-        """
-        for line in record:
-            # unpack line to tuple
-            fields = struct.Struct(mask).unpack_from(line)
-
-            # strip any whitespace for each field
-            # pack everything in a list and add to full dataset
-            data.append(list([f.strip().decode("utf-8") for f in fields]))
-
-        print(data)
-        """
-
         df = pd.read_fwf(StringIO(record))
         df = df.fillna('')
-        print(df)
+
+        # Figure how to save the file
 
         """
-        # else:
-        rows = table.findAll("tr")
-        # count will be the key for each list of values
-        count = 0
-        for row in rows:
-            value_list = []
-            entries = row.findAll("td")
-            for entry in entries:
-                # fix the encoding issues with utf-8
-                entry = entry.text.encode("utf-8", "ignore")
-                strip_unicode = re.compile(
-                    "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
-                entry = entry.decode("utf-8")
-                entry = strip_unicode.sub(" ", entry)
-                value_list.append(entry)
-            # we don't want empty data packages
-            if len(value_list) > 0:
-                div_dict[count] = value_list
-                count += 1
-
         table_obj = Table(caption_dict)
         table_list.append(table_obj)
-        print("Number of caption_tables done: ", iterator)
         """
+        print("Number of caption_tables done: ", iterator)
 
     return table_list
 
