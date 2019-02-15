@@ -108,8 +108,10 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         # Find the first <p> tag with the search text
         caption_tag = soup.find("caption", {"class": str(iterator)})
         # empty dictionary each time represents our table
-        div_dict = {}
+        caption_dict = {}
         # if caption_text != None:
+        caption_dict[table_counter] = caption_tag
+
         """
         # else:
         rows = table.findAll("tr")
@@ -130,11 +132,12 @@ def get_tables(soup, p_counter, div_counter, table_counter):
             if len(value_list) > 0:
                 div_dict[count] = value_list
                 count += 1
-
-        table_obj = Table(div_dict)
-        table_list.append(table_obj)
         """
-        print("Number of table_tables done: ", iterator)
+
+        table_obj = Table(caption_dict)
+        table_list.append(table_obj)
+
+        print("Number of caption_tables done: ", iterator)
 
     return table_list
 
