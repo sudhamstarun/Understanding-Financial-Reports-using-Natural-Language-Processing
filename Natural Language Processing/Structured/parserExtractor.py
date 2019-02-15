@@ -3,7 +3,7 @@ from bs4 import NavigableString
 from collections import namedtuple
 from prettytable import PrettyTable
 from io import StringIO
-import agate
+from astropy.io import ascii
 
 import itertools
 import pandas as pd
@@ -71,7 +71,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
                 table_dict[count] = value_list
                 count += 1
 
-        table_obj = Table(table_dict)
+        table_obj = Tables(table_dict)
         table_list.append(table_obj)
 
         print("Number of p_tables done: ", iterator)
@@ -104,7 +104,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
                 table_dict[count] = value_list
                 count += 1
 
-        table_obj = Table(table_dict)
+        table_obj = Tables(table_dict)
         table_list.append(table_obj)
 
         print("Number of div_tables done: ", iterator)
@@ -119,11 +119,10 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         caption_dict = {}
         # if caption_text != None:
         record = caption_tag.text
-        """
+
         df = pd.read_fwf(StringIO(record))
         df = df.fillna(' ')
         caption_dict = df.to_dict()
-        """
 
         print("Number of caption_tables done: ", iterator)
 
@@ -256,7 +255,7 @@ def save_tables(tables):
 Metadata = namedtuple("Metadata", "num_cols num_entries")
 
 
-class Table:
+class Tables:
 
     def __init__(self, data):
         """
