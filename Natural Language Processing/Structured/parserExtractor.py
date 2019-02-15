@@ -33,6 +33,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
     """
     table_list = []
     space = re.compile(r"\s+")  # used for RegEx Fixed Length to CS purposes
+    counter = 0
     # Extracting tables after a certain p tag
     for iterator in range(1, p_counter+1):
         # Find the first <p> tag with the search text
@@ -111,6 +112,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
     # Extracting tables from the page tag
 
     for iterator in range(1, table_counter+1):
+
         # Find the first <p> tag with the search text
         caption_tag = soup.find("caption", {"class": str(iterator)})
         # empty dictionary each time represents our table
@@ -119,15 +121,24 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         record = caption_tag.text
 
         df = pd.read_fwf(StringIO(record), delim_whitespace=True)
-        print(df)
         df = df.fillna(' ')
         caption_dict = df.to_dict()
 
-        # Figure how to save the file
-        table_obj = Table(caption_dict)
-        table_list.append(table_obj)
-
         print("Number of caption_tables done: ", iterator)
+
+        name = "page_table" + str(counter)
+        fname = name + ".csv"
+        mypath = arguments[0].strip(".txt")
+        fname = os.path.join(mypath, fname)
+        counter += 1
+        # Creating directory if it doesn't exist
+        if not os.path.isdir(mypath):
+            os.makedirs(mypath)
+
+        with open(fname, 'w', encoding='utf8') as outf:
+            w = csv.writer(outf, dialect="excel")
+            li = self.table_data.values()
+            w.writerows(li)
 
     return table_list
 
