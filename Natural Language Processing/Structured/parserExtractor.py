@@ -207,7 +207,7 @@ def append_classID(filepath):
                           searchtext_pageTable[a])
                     word_counter += 1
 
-            if word_counter == 4:
+            if word_counter > 2:
                 print(all_caption_tags[b].text)
                 table_counter += 1
                 all_caption_tags[b]['class'] = table_counter
