@@ -140,6 +140,9 @@ def get_tables(soup, p_counter, div_counter, table_counter):
 
         print("Number of caption_tables done: ", iterator)
 
+        if table_counter > 0:
+            print (dict_to_df(caption_dict))
+
     return table_list
 
 
@@ -254,6 +257,12 @@ def save_tables(tables):
 
 
 Metadata = namedtuple("Metadata", "num_cols num_entries")
+
+
+def dict_to_df(d):
+    df = pd.DataFrame(d.items())
+    df.set_index(0, inplace=True)
+    return df
 
 
 class Table:
