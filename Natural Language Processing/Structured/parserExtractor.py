@@ -1,8 +1,10 @@
 from bs4 import BeautifulSoup as bs
 from bs4 import NavigableString
 from collections import namedtuple
+from tabulate import tabulate
 
 import itertools
+import pandas as pd
 import pprint
 import csv
 import urllib
@@ -16,7 +18,7 @@ program_name = sys.argv[0]
 arguments = sys.argv[1:]
 count = len(arguments)
 
-# ## Defining the get table functions and supporting functions
+# Defining the get table functions and supporting functions
 
 
 def get_tables(soup, p_counter, div_counter, table_counter):
@@ -26,7 +28,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
     pointers to the respective Table object(s).
     """
     table_list = []
-
+    space = re.compile(r"\s+")  # used for RegEx Fixed Length to CS purposes
     # Extracting tables after a certain p tag
     for iterator in range(1, p_counter+1):
         # Find the first <p> tag with the search text
@@ -110,7 +112,12 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         # empty dictionary each time represents our table
         caption_dict = {}
         # if caption_text != None:
-        caption_dict[table_counter] = caption_tag.text
+        final_text = ""
+        record = caption_tag.text
+        values = space.split(record)
+        final_text += ('"' + '","'.join(values) + '"\n')
+
+        print(final_text)
 
         """
         # else:
@@ -132,16 +139,14 @@ def get_tables(soup, p_counter, div_counter, table_counter):
             if len(value_list) > 0:
                 div_dict[count] = value_list
                 count += 1
-        """
 
         table_obj = Table(caption_dict)
         table_list.append(table_obj)
-
         print("Number of caption_tables done: ", iterator)
 
         if table_counter > 0:
-            print (dict_to_df(caption_dict))
-
+            print (tabulate(caption_tag.text))
+        """
     return table_list
 
 
@@ -256,12 +261,6 @@ def save_tables(tables):
 
 
 Metadata = namedtuple("Metadata", "num_cols num_entries")
-
-
-def dict_to_df(d):
-    df = pd.DataFrame(d.items())
-    df.set_index(0, inplace=True)
-    return df
 
 
 class Table:
