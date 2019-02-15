@@ -3,7 +3,6 @@ from bs4 import NavigableString
 from collections import namedtuple
 
 import itertools
-import pandas as pd
 import pprint
 import csv
 import urllib
