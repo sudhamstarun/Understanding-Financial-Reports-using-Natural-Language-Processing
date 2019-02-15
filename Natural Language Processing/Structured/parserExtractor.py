@@ -129,16 +129,15 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         name = "page_table" + str(counter)
         fname = name + ".csv"
         mypath = arguments[0].strip(".txt")
-        fname = os.path.join(mypath, fname)
-        counter += 1
+
         # Creating directory if it doesn't exist
+
         if not os.path.isdir(mypath):
             os.makedirs(mypath)
 
-        with open(fname, 'w', encoding='utf8') as outf:
-            w = csv.writer(outf, dialect="excel")
-            li = self.table_data.values()
-            w.writerows(li)
+        fname = os.path.join(mypath, fname)
+        counter += 1
+        df.to_csv(fname, sep='\t', encoding='utf-8')
 
     return table_list
 
