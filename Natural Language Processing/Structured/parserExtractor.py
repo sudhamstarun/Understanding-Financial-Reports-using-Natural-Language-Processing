@@ -7,6 +7,8 @@ import itertools
 import pandas as pd
 import pprint
 import csv
+import struct
+import json
 import urllib
 import re
 import sys
@@ -117,8 +119,6 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         values = space.split(record)
         final_text += ('"' + '","'.join(values) + '"\n')
 
-        print(final_text)
-
         """
         # else:
         rows = table.findAll("tr")
@@ -143,10 +143,10 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         table_obj = Table(caption_dict)
         table_list.append(table_obj)
         print("Number of caption_tables done: ", iterator)
+        """
 
         if table_counter > 0:
-            print (tabulate(caption_tag.text))
-        """
+            print (tabulate(final_text))
     return table_list
 
 
