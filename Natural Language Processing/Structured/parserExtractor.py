@@ -5,6 +5,7 @@ from tabulate import tabulate
 
 import itertools
 import pandas as pd
+import numpy as np
 import pprint
 import csv
 import struct
@@ -130,7 +131,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         print(data)
         """
 
-        lol = pd.read_fwf(record)
+        lol = np.genfromtxt(record)
         print(lol)
 
         """
@@ -159,8 +160,6 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         print("Number of caption_tables done: ", iterator)
         """
 
-        if table_counter > 0:
-            print (tabulate(final_text))
     return table_list
 
 
