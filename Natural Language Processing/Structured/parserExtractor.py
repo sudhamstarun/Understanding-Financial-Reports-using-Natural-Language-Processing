@@ -3,7 +3,7 @@ from bs4 import NavigableString
 from collections import namedtuple
 from prettytable import PrettyTable
 from io import StringIO
-
+import agate
 
 import itertools
 import pandas as pd
@@ -119,10 +119,13 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         caption_dict = {}
         # if caption_text != None:
         record = caption_tag.text
-
-        df = pd.read_fwf(StringIO(record), delim_whitespace=True)
+        """
+        df = pd.read_fwf(StringIO(record))
         df = df.fillna(' ')
         caption_dict = df.to_dict()
+        """
+        read_success = agate.fixed.reader(record)
+        print(read_success)
 
         print("Number of caption_tables done: ", iterator)
 
