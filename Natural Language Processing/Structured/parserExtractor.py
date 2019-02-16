@@ -121,7 +121,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         # if caption_text != None:
         record = caption_tag.text
         fname = "page_table" + str(counter) + ".txt"
-        dirname = "/home2/vvsaripalli/SECReports/Page-Tag-Data/"
+        dirname = "Page-Tag-Data/"
         mypath = dirname + arguments[0].strip(".txt")
 
         # Creating directory if it doesn't exist
