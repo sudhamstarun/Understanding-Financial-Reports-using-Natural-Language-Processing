@@ -138,7 +138,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         counter += 1
 
         print("Number of caption_tables done: ", iterator)
-        df.to_csv(fname, header=None, encoding='utf-8', index=False)
+        df.to_csv(fname, header=None, encoding='utf-8', index=False, sep=' ')
 
     return table_list
 
