@@ -1,5 +1,12 @@
-import pandas as pd
+import csv
 
-fmt = pd.read_csv('fixed-width.txt', delimiter=' ',
-                  header=None, names=['field', 'width'])
-df = pd.read_fwf('input.txt', widths=fmt['width'], header=None)
+with open('ecoli.data.txt') as input_file:
+    lines = input_file.readlines()
+    newLines = []
+    for line in lines:
+        newLine = line.strip().split()
+        newLines.append(newLine)
+
+with open('output.csv', 'wb') as test_file:
+    file_writer = csv.writer(test_file)
+    file_writer.writerows(newLines)
