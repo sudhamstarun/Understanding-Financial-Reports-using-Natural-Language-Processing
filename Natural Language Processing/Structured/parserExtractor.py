@@ -125,7 +125,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         df = df.fillna(' ')
 
         name = "page_table" + str(counter)
-        fname = name + ".csv"
+        fname = name + ".txt"
         mypath = "/home2/vvsaripalli/SECReports/Page-Tag-Data/" + \
             arguments[0].strip(".txt")
 
