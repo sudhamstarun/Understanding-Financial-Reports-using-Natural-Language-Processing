@@ -124,7 +124,7 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         df = pd.read_fwf(StringIO(record), colspecs='infer')
         df = df.fillna(' ')
 
-        fname = "page_table" + str(counter)
+        fname = "page_table" + str(counter) + ".txt"
         mypath = "/home2/vvsaripalli/SECReports/Page-Tag-Data/" + \
             arguments[0].strip(".txt")
 
