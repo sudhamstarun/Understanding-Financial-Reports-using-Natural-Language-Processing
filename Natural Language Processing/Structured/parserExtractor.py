@@ -122,8 +122,9 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         record = caption_tag.text
         name = "page_table" + str(counter)
         fname = name + ".txt"
-        mypath = "/home2/vvsaripalli/SECReports/Page-Tag-Data/" +
-        arguments[0].strip(".txt") + "/"
+        path = "/home2/vvsaripalli/SECReports/"
+        os.chdir(path)
+        mypath = "Page-Tag-Data/" + arguments[0].strip(".txt") + "/"
 
         # Creating directory if it doesn't exist
         if not os.path.isdir(mypath):
