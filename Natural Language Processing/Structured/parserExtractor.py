@@ -121,15 +121,9 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         # if caption_text != None:
         record = caption_tag.text
 
-        with open("temp.txt", "w") as f:
-            f.write(record)
-
-        filename = "temp.txt"
-        """
-        df = pd.read_fwf(StringIO(record))
+        df = pd.read_fwf(StringIO(record), colspecs='infer')
         df = df.fillna(' ')
         caption_dict = df.to_dict()
-        """
 
         name = "page_table" + str(counter)
         fname = name + ".csv"
