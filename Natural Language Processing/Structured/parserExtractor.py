@@ -123,7 +123,6 @@ def get_tables(soup, p_counter, div_counter, table_counter):
 
         df = pd.read_fwf(StringIO(record), colspecs='infer')
         df = df.fillna(' ')
-        caption_dict = df.to_dict()
 
         name = "page_table" + str(counter)
         fname = name + ".csv"
