@@ -6,6 +6,7 @@ from io import StringIO
 from astropy.io import ascii
 
 import itertools
+import subprocess
 import pandas as pd
 import pprint
 import csv
