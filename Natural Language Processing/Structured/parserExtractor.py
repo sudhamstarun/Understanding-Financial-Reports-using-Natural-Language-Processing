@@ -120,6 +120,9 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         caption_dict = {}
         # if caption_text != None:
         record = caption_tag.text
+
+        with open("temp.txt", "w") as f:
+            f.write(record)
         """
         df = pd.read_fwf(StringIO(record))
         df = df.fillna(' ')
@@ -138,7 +141,8 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         fname = os.path.join(mypath, fname)
         counter += 1
 
-        sub = subprocess.call(['sed', 's/[\t ]+/,/g', record], stdout=fname)
+        sub = subprocess.call(
+            ['sed', 's/[\t ]+/,/g', "temp.txt"], stdout=fname)
         print("Number of caption_tables done: ", iterator)
 
         #df.to_csv(fname, header=None, encoding='utf-8', index=False)
