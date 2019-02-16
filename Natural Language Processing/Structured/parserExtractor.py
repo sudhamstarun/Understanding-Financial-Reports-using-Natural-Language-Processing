@@ -125,20 +125,19 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         df = df.fillna(' ')
 
         name = "page_table" + str(counter)
-        fname = name + ".txt"
         mypath = "/home2/vvsaripalli/SECReports/Page-Tag-Data/" + \
             arguments[0].strip(".txt")
 
         # Creating directory if it doesn't exist
-
         if not os.path.isdir(mypath):
             os.makedirs(mypath)
-
         fname = os.path.join(mypath, fname)
         counter += 1
+        with open(fname, "w") as f:
+            f.write(record)
 
         print("Number of caption_tables done: ", iterator)
-        df.to_csv(fname, header=None, encoding='utf-8', index=False, sep=' ')
+        #df.to_csv(fname, header=None, encoding='utf-8', index=False, sep=' ')
 
     return table_list
 
