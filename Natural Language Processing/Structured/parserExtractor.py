@@ -120,19 +120,19 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         caption_dict = {}
         # if caption_text != None:
         record = caption_tag.text
-
-        df = pd.read_fwf(StringIO(record), colspecs='infer')
-        df = df.fillna(' ')
-
         fname = "page_table" + str(counter) + ".txt"
-        mypath = "/home2/vvsaripalli/SECReports/Page-Tag-Data/" + \
-            arguments[0].strip(".txt")
+        dirname = "/home2/vvsaripalli/SECReports/Page-Tag-Data/"
+        mypath = dirname + arguments[0].strip(".txt")
 
         # Creating directory if it doesn't exist
         if not os.path.isdir(mypath):
             os.makedirs(mypath)
+
         fname = os.path.join(mypath, fname)
+
+        # Counter to create a new
         counter += 1
+
         with open(fname, "w") as f:
             f.write(record)
 
