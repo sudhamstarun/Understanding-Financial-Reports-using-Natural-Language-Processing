@@ -121,8 +121,10 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         # if caption_text != None:
         record = caption_tag.text
         name = "page_table" + str(counter)
-        fname = name + ".csv"
-        mypath = "Page-Tag-Data/" + arguments[0].strip(".txt")
+        fname = name + ".txt"
+        path = "/home2/vvsaripalli/SECReports/"
+        os.chdir(path)
+        mypath = "Page-Tag-Data/" + arguments[0].strip(".txt") + "/"
 
         # Creating directory if it doesn't exist
         if not os.path.isdir(mypath):
@@ -330,3 +332,4 @@ print("tables saved.......")
 # Printing time taken
 end = time.time()
 print("The total time taken for CDS tables extraction is: ", end - start, "s")
+
