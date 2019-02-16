@@ -1,6 +1,6 @@
 import csv
 
-with open('ecoli.data.txt') as input_file:
+with open('temp.txt') as input_file:
     lines = input_file.readlines()
     newLines = []
     for line in lines:
