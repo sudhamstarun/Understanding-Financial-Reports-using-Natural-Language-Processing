@@ -120,9 +120,9 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         caption_dict = {}
         # if caption_text != None:
         record = caption_tag.text
-        fname = "page_table" + str(counter) + ".txt"
-        dirname = "Page-Tag-Data/"
-        mypath = dirname + arguments[0].strip(".txt")
+        name = "page_table" + str(counter)
+        fname = name + ".csv"
+        mypath = "Page-Tag-Data/" + arguments[0].strip(".txt")
 
         # Creating directory if it doesn't exist
         if not os.path.isdir(mypath):
