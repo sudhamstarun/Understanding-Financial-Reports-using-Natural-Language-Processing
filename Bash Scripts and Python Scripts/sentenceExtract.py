@@ -1,26 +1,37 @@
+import string
+import sys
+import re
+
 from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
 
 # reading and tokenizing the file
-f = open("test_data.json").read()
+arguments = sys.argv[1:]
+filename = arguments[0]
+f = open(filename).read()
+f = re.sub(r'\-+', '.', f)
+print(f)
 sentences = sent_tokenize(f)
+my_sentence = []
 
 # defining word list
 
-word_list = ["Notional Amount", "notional amount",
-             "reference entity", "expires", "due"]
+word_list = ["notional amount", "Notional Amount", "pays", "Receive"]
 
 
 def sentenceFinder(sentences, word_list):
     for word in word_list:
-        my_sentence = [
-            sent for sent in sentences if word in word_tokenize(sent)]
+        for sent in sentences:
+            if word in sent:
+                my_sentence.append(sent)
+    print(my_sentence)
 
     return my_sentence
 
 
-sentences = sentenceFinder(sentences, word_list)
+output = sentenceFinder(sentences, word_list)
 
 # writing the output to the file
-with open("output.txt", "w") as f:
-    f.write(sentences)
+with open('output.txt', 'w') as f:
+    for sentence in output:
+        f.write("%s\n" % sentence)
