@@ -10,13 +10,17 @@ arguments = sys.argv[1:]
 filename = arguments[0]
 f = open(filename).read()
 f = re.sub(r'\-+', '.', f)
+f = re.sub(r'\=+', '', f)
+f = re.sub(r'\(+', '', f)
+f = re.sub(r'\)+', '', f)
 print(f)
 sentences = sent_tokenize(f)
 my_sentence = []
 
 # defining word list
 
-word_list = ["notional amount", "Notional Amount", "pays", "Receive"]
+word_list = ["notional amount", "Notional Amount",
+             "pays", "Receive", "Counter Party"]
 
 
 def sentenceFinder(sentences, word_list):
