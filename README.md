@@ -1,6 +1,6 @@
 <center> <img src="Website/images/news.svg" width="150" height="150"> </center>
 
-# Understandng Financial Reports using Natural Language Processing
+# Understanding Financial Reports using Natural Language Processing
 
 This project serves as my undergraduate Computer Science thesis in Natural Language Processing.
 
