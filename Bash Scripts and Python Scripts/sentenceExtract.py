@@ -13,7 +13,6 @@ f = re.sub(r'\-+', '.', f)
 f = re.sub(r'\=+', '', f)
 f = re.sub(r'\(+', '', f)
 f = re.sub(r'\)+', '', f)
-print(f)
 sentences = sent_tokenize(f)
 my_sentence = []
 
@@ -28,7 +27,6 @@ def sentenceFinder(sentences, word_list):
         for sent in sentences:
             if word in sent:
                 my_sentence.append(sent)
-    print(my_sentence)
 
     return my_sentence
 
