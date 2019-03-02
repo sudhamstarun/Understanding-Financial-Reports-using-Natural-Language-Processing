@@ -20,7 +20,7 @@ my_sentence = []
 # defining word list
 
 word_list = ["notional amount", "Notional Amount",
-             "pays", "Receive", "Counter Party"]
+             "Pay", "Receive", "Counter Party"]
 
 
 def sentenceFinder(sentences, word_list):
@@ -36,6 +36,6 @@ def sentenceFinder(sentences, word_list):
 output = sentenceFinder(sentences, word_list)
 
 # writing the output to the file
-with open('output.txt', 'w') as f:
+with open(filename, 'w') as f:
     for sentence in output:
         f.write("%s\n" % sentence)
