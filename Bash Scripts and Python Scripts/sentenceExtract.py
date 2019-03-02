@@ -34,6 +34,6 @@ def sentenceFinder(sentences, word_list):
 output = sentenceFinder(sentences, word_list)
 
 # writing the output to the file
-with open(filename, 'w') as f:
+with open("output.txt", 'w') as f:
     for sentence in output:
         f.write("%s\n" % sentence)
