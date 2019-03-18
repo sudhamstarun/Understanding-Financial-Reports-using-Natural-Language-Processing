@@ -23,6 +23,7 @@ program_name = sys.argv[0]
 arguments = sys.argv[1:]
 count = len(arguments)
 
+sys.setrecursionlimit(1500)
 # Defining the get table functions and supporting functions
 
 
@@ -43,65 +44,34 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         table = table_tag.findNext("table")
         # empty dictionary each time represents our table
         table_dict = {}
+        rows = table.findAll("tr")
+        # count will be the key for each list of values
+        count = 0
+        for row in rows:
+            value_list = []
+            entries = row.findAll("td")
+            for entry in entries:
+                # fix the encoding issues with utf-8
+                if entry.find("p"):
+                    entry = entry.find(
+                        "p").text.encode("utf-8", "ignore")
+                    strip_unicode = re.compile(
+                        "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
+                    entry = entry.decode("utf-8")
+                    entry = strip_unicode.sub(" ", entry)
+                    value_list.append(entry)
 
-        tbody = table.findAll("tbody")
-        # checking for tbody containing table and isolating that specific usecase
-        if tbody:
-            rows = tbody.findAll("tr")
-            # count will be the key for each list of values
-            count = 0
-            for row in rows:
-                value_list = []
-                entries = row.findAll("td")
-                for entry in entries:
-                    # fix the encoding issues with utf-8
-                    if entry.find("p"):
-                        entry = entry.find(
-                            "p").text.encode("utf-8", "ignore")
-                        strip_unicode = re.compile(
-                            "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
-                        entry = entry.decode("utf-8")
-                        entry = strip_unicode.sub(" ", entry)
-                        value_list.append(entry)
-
-                    else:
-                        entry = entry.text.encode("utf-8", "ignore")
-                        strip_unicode = re.compile(
-                            "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
-                        entry = entry.decode("utf-8")
-                        entry = strip_unicode.sub(" ", entry)
-                        value_list.append(entry)
-                # we don't want empty data packages
-                    table_dict[count] = value_list
-                    count += 1
-        else:
-            rows = table.findAll("tr")
-            # count will be the key for each list of values
-            count = 0
-            for row in rows:
-                value_list = []
-                entries = row.findAll("td")
-                for entry in entries:
-                    # fix the encoding issues with utf-8
-                    if entry.find("p"):
-                        entry = entry.find(
-                            "p").text.encode("utf-8", "ignore")
-                        strip_unicode = re.compile(
-                            "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
-                        entry = entry.decode("utf-8")
-                        entry = strip_unicode.sub(" ", entry)
-                        value_list.append(entry)
-
-                    else:
-                        entry = entry.text.encode("utf-8", "ignore")
-                        strip_unicode = re.compile(
-                            "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
-                        entry = entry.decode("utf-8")
-                        entry = strip_unicode.sub(" ", entry)
-                        value_list.append(entry)
-                # we don't want empty data packages
-                    table_dict[count] = value_list
-                    count += 1
+                else:
+                    entry = entry.text.encode("utf-8", "ignore")
+                    strip_unicode = re.compile(
+                        "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
+                    entry = entry.decode("utf-8")
+                    entry = strip_unicode.sub(" ", entry)
+                    value_list.append(entry)
+            # we don't want empty data packages
+            if len(value_list) > 0:
+                table_dict[count] = value_list
+                count += 1
 
         table_obj = Tables(table_dict)
         table_list.append(table_obj)
@@ -114,52 +84,27 @@ def get_tables(soup, p_counter, div_counter, table_counter):
         # Find the first <p> tag with the search text
         table_tag = soup.find("div", {"class": str(iterator)})
         # Find the first <table> tag that follows it
-
         table = table_tag.findNext("table")
         # empty dictionary each time represents our table
-
-        # checking for tbody containing table and isolating that specific usecase
         table_dict = {}
-        tbody = table.findAll("tbody")
-
-        if tbody:
-            rows = table.findAll("tr")
-            # count will be the key for each list of values
-            count = 0
-            for row in rows:
-                value_list = []
-                entries = row.findAll("td")
-                for entry in entries:
-                    # fix the encoding issues with utf-8
-                    entry = entry.text.encode("utf-8", "ignore")
-                    strip_unicode = re.compile(
-                        "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
-                    entry = entry.decode("utf-8")
-                    entry = strip_unicode.sub(" ", entry)
-                    value_list.append(entry)
-                # we don't want empty data packages
-                if len(value_list) > 0:
-                    table_dict[count] = value_list
+        rows = table.findAll("tr")
+        # count will be the key for each list of values
+        count = 0
+        for row in rows:
+            value_list = []
+            entries = row.findAll("td")
+            for entry in entries:
+                # fix the encoding issues with utf-8
+                entry = entry.text.encode("utf-8", "ignore")
+                strip_unicode = re.compile(
+                    "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
+                entry = entry.decode("utf-8")
+                entry = strip_unicode.sub(" ", entry)
+                value_list.append(entry)
+            # we don't want empty data packages
+            if len(value_list) > 0:
+                table_dict[count] = value_list
                 count += 1
-        else:
-            rows = table.findAll("tr")
-            # count will be the key for each list of values
-
-            for row in rows:
-                value_list = []
-                entries = row.findAll("td")
-                for entry in entries:
-                    # fix the encoding issues with utf-8
-                    entry = entry.text.encode("utf-8", "ignore")
-                    strip_unicode = re.compile(
-                        "([^-_a-zA-Z0-9!@#%&=,/'\";:~`\$\^\*\(\)\+\[\]\.\{\}\|\?\<\>\\]+|[^\s]+)")
-                    entry = entry.decode("utf-8")
-                    entry = strip_unicode.sub(" ", entry)
-                    value_list.append(entry)
-                # we don't want empty data packages
-                if len(value_list) > 0:
-                    table_dict[count] = value_list
-                    count += 1
 
         table_obj = Tables(table_dict)
         table_list.append(table_obj)
