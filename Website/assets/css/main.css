@@ -3655,6 +3655,35 @@ table.alt tbody tr td {
 	height: 150px;
 }
 
+.statistics li.style3 span.Dashboard img {
+	display: block;
+	margin-left: 40px;
+	margin-right: auto;
+	position: relative;
+	width: 185px;
+	height: 185px;
+}
+
+.statistics li.style4 span.database img {
+	display: block;
+	margin-left: 50px;
+	margin-right: auto;
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+
+.statistics li.style5 span.search img {
+	display: block;
+	margin-left: 50px;
+	margin-right: auto;
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+
+
+
 .statistics li strong,
 .statistics li b {
 	display: block;
