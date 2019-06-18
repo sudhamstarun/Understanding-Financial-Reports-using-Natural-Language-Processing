@@ -18,6 +18,7 @@ Before SEC has requested more frequent and detailed fund holdings reporting at t
 
 1. For tagging the entities in the reports, I developed a annotation tool which can be found here: `https://github.com/sudhamstarun/Text-Annotation-Tool`
 2. The core of this project can be recognised as a Named Entity Recognition Task, so we implemented a BiLSTM-CRF model and a CRF model to conduct sequence labelling on unsturctured data. Its implementation is still in progress and can be found here: `https://github.com/sudhamstarun/AwesomeNER` <br>
+3. A RESTful API based web application is developed to work as a Credit Default Swap Search Engine in order to make it extremely accessible for researchers and analysts to have access to all the historical mentions of Credit Default Swap by simply searching *counterparty* or *reference entities* `https://github.com/sudhamstarun/Credit-Default-Swap-Search-Engine`
 
 ## Authors:
 
