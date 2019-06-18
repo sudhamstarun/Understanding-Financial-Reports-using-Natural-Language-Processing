@@ -28,6 +28,7 @@ Before SEC has requested more frequent and detailed fund holdings reporting at t
       1. `restructure.sh`: This script focuses on restructuring the initial folder structure into 3 different folders for N-CSR, N-CSRS, N-Q
    2. Sentence Extraction: The python-based scripts were written to parse the HTML tags present in the report and also to perform other tasks such as removing stop words and extracting sentences which contained unstructured CDS information.
 3. Rule-Based Extraction: This folder contains the rule-based framework developed based on python to extract the tables containing CDS information and save it in a .csv format. This makes it extremely easy to convert reports from .NET format to .csv format making it easy to visualise and analyse the data.
+4.  Finally, the website folder contains the code for the landing page created for course requirements.
 
 ## Installation and Demo
 
@@ -36,11 +37,22 @@ Before SEC has requested more frequent and detailed fund holdings reporting at t
 ``` bash
 pip3 install -r requirements.txt
 ```
-3. To run the sentence extraction script simply run:
+3. To run the *sentence extraction* script simply run:
 
 ```bash
-python3 sentenceExtraction.py [name of the .txt file]
+python3 sentenceExtraction.py [name of the .txt or .htmlfile]
 ```
+4. To run the HTMl tags parsing script, run:
+``` bash
+python3 HTML_Parser.py [name of the .txt or .html file]
+```
+
+5. Finally, to run the table extractor script, simply run the following command:
+```bash
+python3 parserExtractor.py [name of the .txt or .html file]
+```
+The output of the table-extractor script will be saved in the sample output folder.
+
 ## Authors:
 
 [Tarun Sudhams](https://github.com/sudhamstarun)
