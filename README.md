@@ -27,8 +27,20 @@ Before SEC has requested more frequent and detailed fund holdings reporting at t
    1. Restructuring Scripts: These scripts were written to further restructure the data extracted from the SEC website(148 GB) and to it's current folder heirarchy shown in the image below. Some of the noteworthy scripts are:
       1. `restructure.sh`: This script focuses on restructuring the initial folder structure into 3 different folders for N-CSR, N-CSRS, N-Q
    2. Sentence Extraction: The python-based scripts were written to parse the HTML tags present in the report and also to perform other tasks such as removing stop words and extracting sentences which contained unstructured CDS information.
-3. Rule-Based Extraction: This folder contains the rule-based framework developed based on pythont o extract the tables containing CDS information and save it in a .csv format. This amkes it extremely easy to convert reports from .NET format to .csv format making it easy to visualise and analyse the data.
+3. Rule-Based Extraction: This folder contains the rule-based framework developed based on python to extract the tables containing CDS information and save it in a .csv format. This makes it extremely easy to convert reports from .NET format to .csv format making it easy to visualise and analyse the data.
 
+## Installation and Demo
+
+1. Before running any of the scripts, make sure you set up a virtual environment and activate the environment.
+2. Then install all the necessary python dependencies by using the command:
+``` bash
+pip3 install -r requirements.txt
+```
+3. To run the sentence extraction script simply run:
+
+```bash
+python3 sentenceExtraction.py [name of the .txt file]
+```
 ## Authors:
 
 [Tarun Sudhams](https://github.com/sudhamstarun)
