@@ -46,7 +46,7 @@ natural-keys==1.4.0
 nbconvert==5.4.1
 nbformat==4.4.0
 networkx==2.2
-notebook==5.7.4
+notebook==5.7.8
 numpy==1.16.1
 odfpy==1.4.0
 openpyxl==2.6.0
@@ -72,7 +72,7 @@ pystan==2.18.1.0
 python-dateutil==2.8.0
 pytz==2018.9
 pyxform==0.12.2
-PyYAML==3.13
+PyYAML==5.1
 pyzmq==18.0.0
 qtconsole==4.4.3
 requests==2.21.0
@@ -89,7 +89,7 @@ traceback2==1.4.0
 traitlets==4.3.2
 unicodecsv==0.14.1
 unittest2==1.1.0
-urllib3==1.24.1
+urllib3==1.24.2
 vine==1.2.0
 virtualenv==16.4.0
 wcwidth==0.1.7
