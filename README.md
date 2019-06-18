@@ -20,6 +20,15 @@ Before SEC has requested more frequent and detailed fund holdings reporting at t
 2. The core of this project can be recognised as a Named Entity Recognition Task, so we implemented a BiLSTM-CRF model and a CRF model to conduct sequence labelling on unsturctured data. Its implementation is still in progress and can be found here: `https://github.com/sudhamstarun/AwesomeNER` <br>
 3. A RESTful API based web application is developed to work as a Credit Default Swap Search Engine in order to make it extremely accessible for researchers and analysts to have access to all the historical mentions of Credit Default Swap by simply searching *counterparty* or *reference entities* `https://github.com/sudhamstarun/Credit-Default-Swap-Search-Engine`
 
+## Basic Folder Structure
+
+1. The Data Crawling folder is essentially the web crawling scripts written in Python to extract the N-CSR, N-CSRS and N-Q reports from the SEC website.
+2. Data Preprocessing folder contains two further folders dedicated to:
+   1. Restructuring Scripts: These scripts were written to further restructure the data extracted from the SEC website(148 GB) and to it's current folder heirarchy shown in the image below. Some of the noteworthy scripts are:
+      1. `restructure.sh`: This script focuses on restructuring the initial folder structure into 3 different folders for N-CSR, N-CSRS, N-Q
+   2. Sentence Extraction: The python-based scripts were written to parse the HTML tags present in the report and also to perform other tasks such as removing stop words and extracting sentences which contained unstructured CDS information.
+3. Rule-Based Extraction: This folder contains the rule-based framework developed based on pythont o extract the tables containing CDS information and save it in a .csv format. This amkes it extremely easy to convert reports from .NET format to .csv format making it easy to visualise and analyse the data.
+
 ## Authors:
 
 [Tarun Sudhams](https://github.com/sudhamstarun)
