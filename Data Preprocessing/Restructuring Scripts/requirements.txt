@@ -2,7 +2,7 @@ backports.functools-lru-cache==1.5
 BeautifulSoup==3.2.1
 beautifulsoup4==4.7.1
 bs4==0.0.1
-lxml==4.3.0
+lxml==4.6.3
 nltk==3.4.5
 simplejson==3.16.0
 singledispatch==3.4.0.3
