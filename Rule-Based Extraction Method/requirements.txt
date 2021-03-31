@@ -36,7 +36,7 @@ jupyter-core==4.4.0
 kiwisolver==1.0.1
 kombu==4.3.0
 linecache2==1.0.0
-lxml==4.3.1
+lxml==4.6.3
 MacFSEvents==0.8.1
 Markdown==3.0.1
 MarkupSafe==1.1.0
