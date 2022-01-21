@@ -21,7 +21,7 @@ gmane==0.1.dev25
 html-json-forms==1.0.0
 idna==2.8
 ipykernel==5.1.0
-ipython==7.3.0
+ipython==7.16.3
 ipython-genutils==0.2.0
 ipywidgets==7.4.2
 jdcal==1.4
