@@ -84,7 +84,7 @@ simplejson==3.16.0
 splinter==0.10.0
 terminado==0.8.1
 testpath==0.4.2
-tornado==5.1.1
+tornado==6.4.2
 traceback2==1.4.0
 traitlets==4.3.2
 unicodecsv==0.14.1
